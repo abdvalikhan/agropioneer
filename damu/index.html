@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="public/images/01_hero_silos_field.webp"
+        imagesrcset="public/images/01_hero_silos_field-1280.webp 1280w, public/images/01_hero_silos_field.webp 2400w"
+        imagesizes="100vw" fetchpriority="high">
 </head>
 <body>
 
@@ -36,7 +39,7 @@
         </div>
       </div>
 
-      <a class="nav__link" href="#jana">Промышленное производство</a>
+      <a class="nav__link" href="jana-dala.html">Промышленное производство</a>
       <a class="nav__link" href="#directions">Сушильное оборудование</a>
       <a class="nav__link" href="#footer">Контакты</a>
     </nav>
@@ -70,15 +73,21 @@
       <a href="#directions">Растениеводство</a>
       <a href="#products">Продукция</a>
     </div>
-    <a href="#jana">Промышленное производство</a>
+    <a href="jana-dala.html">Промышленное производство</a>
     <a href="#directions">Сушильное оборудование</a>
     <a href="#footer">Контакты</a>
   </div>
 
   <section class="hero" id="top" aria-label="Damu Group">
-    <img class="hero__img" src="public/images/01_hero_silos_field.jpg"
-         alt="Элеваторы и золотое пшеничное поле на закате"
-         width="2400" height="1400" loading="eager" fetchpriority="high">
+    <picture>
+      <source type="image/webp" sizes="100vw"
+              srcset="public/images/01_hero_silos_field-1280.webp 1280w, public/images/01_hero_silos_field.webp 2400w">
+      <source type="image/jpeg" sizes="100vw"
+              srcset="public/images/01_hero_silos_field-1280.jpg 1280w, public/images/01_hero_silos_field.jpg 2400w">
+      <img class="hero__img" src="public/images/01_hero_silos_field.jpg"
+           alt="Элеваторы и золотое пшеничное поле на закате"
+           width="2400" height="1400" loading="eager" fetchpriority="high">
+    </picture>
     <div class="hero__grad-h" aria-hidden="true"></div>
     <div class="hero__grad-top" aria-hidden="true"></div>
 
@@ -154,14 +163,20 @@
 
     <!-- ============================ JANA DALA BANNER ============================ -->
     <section class="jana" id="jana" aria-label="Jana Dala — от профиля до готового здания">
-      <img class="jana__img" src="public/images/06_jana_dala_factory.jpg"
-           alt="Производственный комплекс Jana Dala" width="2000" height="900" loading="lazy">
+      <picture>
+        <source type="image/webp" sizes="100vw"
+                srcset="public/images/06_jana_dala_factory-1280.webp 1280w, public/images/06_jana_dala_factory.webp 2000w">
+        <source type="image/jpeg" sizes="100vw"
+                srcset="public/images/06_jana_dala_factory-1280.jpg 1280w, public/images/06_jana_dala_factory.jpg 2000w">
+        <img class="jana__img" src="public/images/06_jana_dala_factory.jpg"
+             alt="Производственный комплекс Jana Dala" width="2000" height="900" loading="lazy">
+      </picture>
       <div class="jana__grad" aria-hidden="true"></div>
       <div class="container jana__content">
         <p class="eyebrow jana__eyebrow">Jana Dala</p>
         <h2 class="jana__title">От профиля<br>до готового здания</h2>
         <ul class="jana__tags"><li>ЛСТК</li><li>Металлоконструкции</li><li>Металлоизделия</li><li>Комплектные здания</li></ul>
-        <a class="jana__btn" href="#footer">Подробнее <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="jana__btn" href="jana-dala.html">Подробнее <span class="arrow" aria-hidden="true">→</span></a>
       </div>
     </section>
 
@@ -176,42 +191,48 @@
         </div>
 
         <div class="crops">
-          <figure class="crop">
+          <a class="crop" href="wheat">
             <div class="crop__media crop__media--wheat" role="img" aria-label="Пшеница"></div>
-            <figcaption class="crop__caption">Пшеница</figcaption>
-          </figure>
-          <figure class="crop">
+            <div class="crop__caption">Пшеница</div>
+          </a>
+          <a class="crop" href="barley">
             <div class="crop__media crop__media--barley" role="img" aria-label="Ячмень"></div>
-            <figcaption class="crop__caption">Ячмень</figcaption>
-          </figure>
-          <figure class="crop">
+            <div class="crop__caption">Ячмень</div>
+          </a>
+          <a class="crop" href="flax">
             <div class="crop__media crop__media--flax" role="img" aria-label="Лён"></div>
-            <figcaption class="crop__caption">Лён</figcaption>
-          </figure>
-          <figure class="crop">
+            <div class="crop__caption">Лён</div>
+          </a>
+          <a class="crop" href="sunflower">
             <div class="crop__media crop__media--sunflower" role="img" aria-label="Подсолнечник"></div>
-            <figcaption class="crop__caption">Подсолнечник</figcaption>
-          </figure>
-          <figure class="crop">
+            <div class="crop__caption">Подсолнечник</div>
+          </a>
+          <a class="crop" href="colza">
             <div class="crop__media crop__media--rapeseed" role="img" aria-label="Рапс"></div>
-            <figcaption class="crop__caption">Рапс</figcaption>
-          </figure>
-          <figure class="crop">
+            <div class="crop__caption">Рапс</div>
+          </a>
+          <a class="crop" href="soy">
             <div class="crop__media crop__media--soybean" role="img" aria-label="Соя"></div>
-            <figcaption class="crop__caption">Соя</figcaption>
-          </figure>
-          <figure class="crop">
+            <div class="crop__caption">Соя</div>
+          </a>
+          <a class="crop" href="safflower">
             <div class="crop__media crop__media--safflower" role="img" aria-label="Сафлор"></div>
-            <figcaption class="crop__caption">Сафлор</figcaption>
-          </figure>
+            <div class="crop__caption">Сафлор</div>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- ============================ UNITY BANNER ============================ -->
     <section class="unity" aria-label="Сила в объединении наших компетенций">
-      <img class="unity__img" src="public/images/14_footer_landscape.jpg"
-           alt="Аграрный ландшафт и инфраструктура Damu Group" width="2400" height="900" loading="lazy">
+      <picture>
+        <source type="image/webp" sizes="100vw"
+                srcset="public/images/14_footer_landscape-1280.webp 1280w, public/images/14_footer_landscape.webp 2400w">
+        <source type="image/jpeg" sizes="100vw"
+                srcset="public/images/14_footer_landscape-1280.jpg 1280w, public/images/14_footer_landscape.jpg 2400w">
+        <img class="unity__img" src="public/images/14_footer_landscape.jpg"
+             alt="Аграрный ландшафт и инфраструктура Damu Group" width="2400" height="900" loading="lazy">
+      </picture>
       <div class="unity__grad" aria-hidden="true"></div>
       <div class="container unity__content">
         <h2 class="unity__title">Сила в объединении<br>наших компетенций</h2>
@@ -237,7 +258,7 @@
         <ul class="footer__list">
           <li><a href="#directions">Агротрейдинг</a></li>
           <li><a href="#directions">Сельскохозяйственное производство</a></li>
-          <li><a href="#jana">Промышленное производство</a></li>
+          <li><a href="jana-dala.html">Промышленное производство</a></li>
           <li><a href="#directions">Сушильное оборудование</a></li>
         </ul>
       </nav>
@@ -268,6 +289,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

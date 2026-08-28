@@ -261,10 +261,10 @@ h1, h2, h3 { overflow-wrap: break-word; }
   font-size: 20px; line-height: 1; color: rgba(255,255,255,.85);
 }
 /* card photos (exact filenames from the production pack) */
-.card__media--agrotrading { background-image: url("public/images/02_agriculture_combine.jpg"); }
-.card__media--agriculture { background-image: url("public/images/03_agriculture_seedlings.jpg"); }
-.card__media--jana        { background-image: url("public/images/04_jana_dala_steel_frame.jpg"); }
-.card__media--drying      { background-image: url("public/images/05_alvan_blanch_equipment.jpg"); }
+.card__media--agrotrading { background-image: url("public/images/02_agriculture_combine.jpg"); background-image: image-set(url("public/images/02_agriculture_combine.webp") type("image/webp"), url("public/images/02_agriculture_combine.jpg") type("image/jpeg")); }
+.card__media--agriculture { background-image: url("public/images/03_agriculture_seedlings.jpg"); background-image: image-set(url("public/images/03_agriculture_seedlings.webp") type("image/webp"), url("public/images/03_agriculture_seedlings.jpg") type("image/jpeg")); }
+.card__media--jana        { background-image: url("public/images/04_jana_dala_steel_frame.jpg"); background-image: image-set(url("public/images/04_jana_dala_steel_frame.webp") type("image/webp"), url("public/images/04_jana_dala_steel_frame.jpg") type("image/jpeg")); }
+.card__media--drying      { background-image: url("public/images/05_alvan_blanch_equipment.jpg"); background-image: image-set(url("public/images/05_alvan_blanch_equipment.webp") type("image/webp"), url("public/images/05_alvan_blanch_equipment.jpg") type("image/jpeg")); }
 
 /* accent third card */
 .card--accent {
@@ -345,6 +345,8 @@ h1, h2, h3 { overflow-wrap: break-word; }
 .crops {
   display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px;
 }
+.crop { display: block; color: var(--ink); }
+.crop:hover .crop__caption { text-decoration: underline; }
 .crop__media {
   aspect-ratio: 3 / 4;
   overflow: hidden;
@@ -352,13 +354,13 @@ h1, h2, h3 { overflow-wrap: break-word; }
   background-size: cover; background-position: center;
 }
 /* crop photos (exact filenames from the production pack) */
-.crop__media--wheat     { background-image: url("public/images/07_wheat.jpg"); }
-.crop__media--barley    { background-image: url("public/images/08_barley.jpg"); }
-.crop__media--flax      { background-image: url("public/images/09_flax.jpg"); }
-.crop__media--sunflower { background-image: url("public/images/10_sunflower.jpg"); }
-.crop__media--rapeseed  { background-image: url("public/images/11_rapeseed.jpg"); }
-.crop__media--soybean   { background-image: url("public/images/12_soybean.jpg"); }
-.crop__media--safflower { background-image: url("public/images/13_safflower.jpg"); }
+.crop__media--wheat     { background-image: url("public/images/07_wheat.jpg"); background-image: image-set(url("public/images/07_wheat.webp") type("image/webp"), url("public/images/07_wheat.jpg") type("image/jpeg")); }
+.crop__media--barley    { background-image: url("public/images/08_barley.jpg"); background-image: image-set(url("public/images/08_barley.webp") type("image/webp"), url("public/images/08_barley.jpg") type("image/jpeg")); }
+.crop__media--flax      { background-image: url("public/images/09_flax.jpg"); background-image: image-set(url("public/images/09_flax.webp") type("image/webp"), url("public/images/09_flax.jpg") type("image/jpeg")); }
+.crop__media--sunflower { background-image: url("public/images/10_sunflower.jpg"); background-image: image-set(url("public/images/10_sunflower.webp") type("image/webp"), url("public/images/10_sunflower.jpg") type("image/jpeg")); }
+.crop__media--rapeseed  { background-image: url("public/images/11_rapeseed.jpg"); background-image: image-set(url("public/images/11_rapeseed.webp") type("image/webp"), url("public/images/11_rapeseed.jpg") type("image/jpeg")); }
+.crop__media--soybean   { background-image: url("public/images/12_soybean.jpg"); background-image: image-set(url("public/images/12_soybean.webp") type("image/webp"), url("public/images/12_soybean.jpg") type("image/jpeg")); }
+.crop__media--safflower { background-image: url("public/images/13_safflower.jpg"); background-image: image-set(url("public/images/13_safflower.webp") type("image/webp"), url("public/images/13_safflower.jpg") type("image/jpeg")); }
 .crop__caption {
   margin-top: 12px; text-align: center;
   font-size: 13px; font-weight: 500; color: var(--ink);

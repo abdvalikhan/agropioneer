@@ -5,3 +5,4 @@ img/
 _preview/
 package*.json
 _preview*.cjs
+_*.cjs
