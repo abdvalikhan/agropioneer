@@ -3,59 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JANA DALA — завод металлоконструкций: ЛСТК, ангары, чёрный металл</title>
-  <meta name="description" content="JANA DALA — современный завод металлоконструкций полного цикла: ЛСТК и конструкции из чёрного металла, металлические ангары, инженерная подготовка, производство и логистика по Казахстану.">
-  <meta name="theme-color" content="#0F1D28">
+  <title>Jana Dala — промышленное производство</title>
+  <meta name="description" content="JANA DALA — промышленное направление Damu Group: металлоконструкции и ЛСТК полного цикла, обработка чёрного металла, металлические ангары, логистика по Казахстану.">
+  <meta name="theme-color" content="#0B1522">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="jana-dala.css">
-  <link rel="preload" as="image" href="public/images/04_jana_dala_steel_frame.webp" fetchpriority="high">
 </head>
 <body>
 
-  <!-- ============================ HEADER ============================ -->
-  <header class="header header--solid">
-    <a class="logo" href="index.html" aria-label="Damu Group — на главную">
-      <span class="logo__mark" aria-hidden="true"></span>
-      <span class="logo__word">DAMU GROUP</span>
-    </a>
+  <!-- ============================ HERO + HEADER ============================ -->
+  <section class="hero">
+    <img class="hero__img" src="public/images/jana_dala_steel_frame.jpg"
+         alt="Металлический каркас промышленного здания JANA DALA"
+         width="1920" height="470" loading="eager" fetchpriority="high">
+    <div class="hero__grad" aria-hidden="true"></div>
 
-    <nav class="nav" aria-label="Основная навигация">
-      <a class="nav__link" href="index.html#directions">О группе</a>
-      <div class="nav__item">
-        <button class="nav__link" type="button" aria-haspopup="true" aria-expanded="false">
-          Агробизнес
-          <svg class="chevron" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="nav__menu" role="menu">
-          <a role="menuitem" href="index.html#directions">Агротрейдинг</a>
-          <a role="menuitem" href="index.html#directions">Растениеводство</a>
-          <a role="menuitem" href="index.html#products">Продукция</a>
-        </div>
-      </div>
-      <a class="nav__link" href="jana-dala.html" aria-current="page">Промышленное производство</a>
-      <a class="nav__link" href="index.html#directions">Сушильное оборудование</a>
-      <a class="nav__link" href="#contacts">Контакты</a>
-    </nav>
-
-    <div class="header__right">
-      <button class="search-btn" type="button" aria-label="Поиск">
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-          <circle cx="7.8" cy="7.8" r="5.4" stroke="rgba(255,255,255,.9)" stroke-width="1.5"/>
-          <path d="M11.8 11.8 L16 16" stroke="rgba(255,255,255,.9)" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-      </button>
-      <a class="lang" href="#" aria-label="Язык: русский">RU
-        <svg class="chevron" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <header class="header">
+      <a class="logo" href="index.html" aria-label="Damu Group — на главную">
+        <svg class="logo__mark" width="26" height="22" viewBox="0 0 26 22" fill="none" aria-hidden="true"><path d="M2 20 L8 2 L13 12 L18 2 L24 20" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="logo__word">DAMU GROUP</span>
       </a>
-      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
-        <span></span><span></span><span></span>
-      </button>
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link" href="index.html#directions">О группе</a>
+        <div class="nav__item">
+          <button class="nav__link" type="button" aria-haspopup="true" aria-expanded="false">Агробизнес
+            <svg class="chevron" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav__menu" role="menu">
+            <a role="menuitem" href="index.html#directions">Агротрейдинг</a>
+            <a role="menuitem" href="index.html#directions">Растениеводство</a>
+            <a role="menuitem" href="index.html#products">Продукция</a>
+          </div>
+        </div>
+        <a class="nav__link nav__link--active" href="jana-dala.html" aria-current="page">Промышленное производство</a>
+        <a class="nav__link" href="index.html#directions">Сушильное оборудование</a>
+        <a class="nav__link" href="#footer">Контакты</a>
+      </nav>
+      <div class="header__right">
+        <a class="lang" href="#" aria-label="Язык: русский">RU
+          <svg class="chevron" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">JANA DALA</p>
+      <h1 class="hero__title">Металлоконструкции<br>и ЛСТК полного цикла</h1>
+      <p class="hero__slogan">Проектирование&nbsp;•&nbsp;Производство&nbsp;•&nbsp;Комплектация&nbsp;•&nbsp;Поставка</p>
+      <div class="hero__buttons">
+        <a class="btn btn--accent" href="#footer">Оставить заявку</a>
+        <a class="btn btn--ghost" href="#footer">Скачать презентацию</a>
+      </div>
     </div>
-  </header>
+  </section>
 
   <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Меню">
     <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
@@ -70,261 +76,192 @@
     </div>
     <a href="jana-dala.html">Промышленное производство</a>
     <a href="index.html#directions">Сушильное оборудование</a>
-    <a href="#contacts">Контакты</a>
+    <a href="#footer">Контакты</a>
   </div>
 
   <main>
-    <!-- ============================ HERO ============================ -->
-    <section class="page-hero" aria-label="JANA DALA — завод металлоконструкций">
-      <picture>
-        <source type="image/webp" srcset="public/images/04_jana_dala_steel_frame.webp">
-        <img class="page-hero__img" src="public/images/04_jana_dala_steel_frame.jpg"
-             alt="Металлический каркас промышленного здания производства JANA DALA"
-             width="900" height="1100" loading="eager" fetchpriority="high">
-      </picture>
-      <div class="page-hero__grad" aria-hidden="true"></div>
-      <div class="container page-hero__content">
-        <p class="eyebrow page-hero__eyebrow">JANA DALA · Промышленное производство</p>
-        <h1 class="page-hero__title">Современный завод металлоконструкций полного цикла</h1>
-        <p class="page-hero__lead">Изготовление ЛСТК и конструкций из чёрного металла, производство металлических ангаров — от инженерной подготовки до отгрузки готового объекта.</p>
-      </div>
-    </section>
-
-    <!-- ============================ О КОМПАНИИ ============================ -->
-    <section class="jd-section">
-      <div class="container">
-        <div class="jd-about">
-          <div>
-            <p class="eyebrow jd-eyebrow">О компании</p>
-            <h2 class="jd-h2">Новый производственный комплекс полного цикла</h2>
-            <p class="jd-intro">JANA DALA — новый современный завод, объединяющий изготовление лёгких стальных тонкостенных конструкций (ЛСТК) и конструкций из чёрного металла, а также производство металлических ангаров на единой производственной площадке.</p>
-          </div>
-          <div class="jd-pillars">
-            <div class="jd-pillar"><div class="jd-pillar__num">01</div><div class="jd-pillar__text">Новый современный завод</div></div>
-            <div class="jd-pillar"><div class="jd-pillar__num">02</div><div class="jd-pillar__text">Производственный комплекс полного цикла</div></div>
-            <div class="jd-pillar"><div class="jd-pillar__num">03</div><div class="jd-pillar__text">Изготовление ЛСТК и конструкций из чёрного металла</div></div>
-            <div class="jd-pillar"><div class="jd-pillar__num">04</div><div class="jd-pillar__text">Производство металлических ангаров</div></div>
-          </div>
+    <!-- ============================ INTRO ============================ -->
+    <section class="section section--white">
+      <div class="intro">
+        <div>
+          <p class="eyebrow intro__eyebrow" style="color:var(--accent)">JANA DALA</p>
+          <h2 class="intro__title">Промышленное направление<br>DAMU GROUP</h2>
+          <p class="intro__text">Изготавливаем ЛСТК, обрабатываем чёрный металл, производим металлоконструкции и металлические ангары для различных отраслей.</p>
+        </div>
+        <div class="intro__media">
+          <img src="public/images/jana_dala_factory.jpg" alt="Производственный комплекс JANA DALA" width="800" height="300" loading="lazy">
         </div>
       </div>
     </section>
 
-    <!-- ============================ ЛСТК + ЧЁРНЫЙ МЕТАЛЛ ============================ -->
-    <section class="jd-section jd-section--alt">
-      <div class="container">
-        <p class="eyebrow jd-eyebrow">Технологии</p>
-        <h2 class="jd-h2">ЛСТК и обработка чёрного металла</h2>
-        <p class="jd-intro">Комбинирование ЛСТК и чёрного металла позволяет реализовывать объекты любой сложности.</p>
-        <div class="jd-cols">
-          <div class="jd-col">
-            <div class="jd-col__title">ЛСТК</div>
-            <ul class="jd-list">
-              <li>Широкая линейка профилей</li>
-              <li>Различные толщины металла</li>
-              <li>Точная геометрия элементов</li>
-              <li>Болтовые соединения</li>
-              <li>Заводская комплектация</li>
-            </ul>
+    <!-- ============================ CAPABILITIES ============================ -->
+    <section class="section section--alt">
+      <h2 class="s-h2">Наши возможности</h2>
+      <div class="caps">
+        <article class="cap">
+          <div class="cap__row">
+            <svg class="cap__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7 L12 3 L20 7 L20 17 L12 21 L4 17 Z"/><path d="M4 7 L12 11 L20 7"/><path d="M12 11 L12 21"/></svg>
+            <h3 class="cap__title">ЛСТК</h3>
           </div>
-          <div class="jd-col">
-            <div class="jd-col__title">Обработка чёрного металла</div>
-            <ul class="jd-list">
-              <li>Производство ферм и колонн</li>
-              <li>Изготовление опорных узлов</li>
-              <li>Плазменная резка</li>
-              <li>Сварочные посты</li>
-              <li>Подготовка полного комплекта деталей</li>
-            </ul>
+          <p class="cap__text">Производство ЛСТК и лёгких стальных конструкций зданий</p>
+        </article>
+        <article class="cap">
+          <div class="cap__row">
+            <svg class="cap__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18 L9 12"/><path d="M8 13 L11 10 L14 13 L11 16 Z"/><path d="M13 9 L18 4 L21 7 L16 12"/><path d="M3 21 L7 21"/></svg>
+            <h3 class="cap__title">Обработка чёрного металла</h3>
           </div>
-        </div>
+          <p class="cap__text">Плазменная резка, гибка, сварка и механическая обработка</p>
+        </article>
+        <article class="cap">
+          <div class="cap__row">
+            <svg class="cap__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20 L3 11 L12 5 L21 11 L21 20 Z"/><path d="M7 20 L7 14 L17 14 L17 20"/></svg>
+            <h3 class="cap__title">Металлические ангары</h3>
+          </div>
+          <p class="cap__text">Каркасные решения для хранения техники и аграрного сектора</p>
+        </article>
+        <article class="cap">
+          <div class="cap__row">
+            <svg class="cap__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7 L14 7 L14 16 L2 16 Z"/><path d="M14 10 L18 10 L21 13 L21 16 L14 16"/><path d="M6.5 18.5 a1.6 1.6 0 1 0 0.01 0"/><path d="M17.5 18.5 a1.6 1.6 0 1 0 0.01 0"/></svg>
+            <h3 class="cap__title">Логистика по Казахстану</h3>
+          </div>
+          <p class="cap__text">Организуем доставку металлоконструкций по всей территории страны</p>
+        </article>
       </div>
     </section>
 
-    <!-- ============================ ЛИНЕЙКА ПРОФИЛЕЙ ============================ -->
-    <section class="jd-section">
-      <div class="container">
-        <p class="eyebrow jd-eyebrow">Линейка профилей</p>
-        <h2 class="jd-h2">Подбор профиля под расчётную нагрузку</h2>
-        <p class="jd-note">Различные толщины металла · подбор профиля под расчётную нагрузку.</p>
-        <div class="jd-profiles">
-          <div class="jd-profile">
-            <div class="jd-profile__tag">C-ОБРАЗНЫЕ</div>
-            <div class="jd-profile__name">Несущие элементы</div>
-            <div class="jd-profile__desc">Основные несущие элементы конструкции.</div>
-          </div>
-          <div class="jd-profile">
-            <div class="jd-profile__tag">SIGMA</div>
-            <div class="jd-profile__name">Профили повышенной жёсткости</div>
-            <div class="jd-profile__desc">Sigma-профили повышенной жёсткости.</div>
-          </div>
-          <div class="jd-profile">
-            <div class="jd-profile__tag">П-ОБРАЗНЫЕ</div>
-            <div class="jd-profile__name">Направляющие и усиления</div>
-            <div class="jd-profile__desc">Направляющие элементы и усиления.</div>
-          </div>
-        </div>
+    <!-- ============================ LSTK ============================ -->
+    <section class="section section--white">
+      <h2 class="s-h2">ЛСТК и обработка чёрного металла</h2>
+      <div class="lstk">
+        <article class="profile">
+          <h3 class="profile__title">С-образный профиль</h3>
+          <p class="profile__text">Для стеновых, прогонов и несущих элементов.</p>
+          <div class="profile__media"><div class="ph ph--light ph--contain">profile-c.png</div></div>
+        </article>
+        <article class="profile">
+          <h3 class="profile__title">Z (сигма-образный) профиль</h3>
+          <p class="profile__text">Для перекрытий, прогонов и каркасных конструкций.</p>
+          <div class="profile__media"><div class="ph ph--light ph--contain">profile-z.png</div></div>
+        </article>
+        <article class="profile">
+          <h3 class="profile__title">П-образный профиль</h3>
+          <p class="profile__text">Для обвязки, ригелей и усилений.</p>
+          <div class="profile__media"><div class="ph ph--light ph--contain">profile-p.png</div></div>
+        </article>
+        <div class="lstk__photo"><div class="ph ph--light">metal-cutting.jpg</div></div>
       </div>
     </section>
 
-    <!-- ============================ ОБОРУДОВАНИЕ ============================ -->
-    <section class="jd-section jd-section--deep">
-      <div class="container">
-        <p class="eyebrow jd-eyebrow">Производственное оборудование</p>
-        <h2 class="jd-h2">Высокоточная обработка металла</h2>
-        <div class="jd-equip">
-          <div class="jd-equip__cell"><div class="jd-equip__name">Плазменная резка</div></div>
-          <div class="jd-equip__cell"><div class="jd-equip__name">Лазерная резка</div></div>
-          <div class="jd-equip__cell"><div class="jd-equip__name">Резьбонарезные станки</div></div>
-          <div class="jd-equip__cell"><div class="jd-equip__name">Сварочные участки</div></div>
-        </div>
-        <ul class="jd-list" style="margin-top:32px;max-width:640px">
-          <li>Высокоточная резка металла</li>
-          <li>Обработка конструкционных элементов</li>
-          <li>Подготовка узлов и соединений</li>
-          <li>Полный цикл обработки металла</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- ============================ ИНЖЕНЕРНАЯ ПОДГОТОВКА ============================ -->
-    <section class="jd-section">
-      <div class="container">
-        <div class="jd-split">
-          <div>
-            <p class="eyebrow jd-eyebrow">Инженерная подготовка</p>
-            <h2 class="jd-h2">От эскиза до подготовки к производству</h2>
-            <ul class="jd-list jd-list--light" style="margin-top:28px">
-              <li>Эскизный проект</li>
-              <li>Расчёт конструкций</li>
-              <li>Раздел КМ</li>
-              <li>Оптимизация металлоёмкости</li>
-              <li>Подготовка к производству</li>
-            </ul>
+    <!-- ============================ PRODUCTION CYCLE ============================ -->
+    <section class="section section--alt">
+      <h2 class="s-h2">Производственный цикл</h2>
+      <div class="cycle">
+        <div class="cycle__grid">
+          <div class="step">
+            <svg class="step__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3 L20 3 L20 21 L4 21 Z"/><path d="M8 8 L16 8"/><path d="M8 12 L16 12"/><path d="M8 16 L13 16"/></svg>
+            <div><h3 class="step__title">Проектирование</h3><p class="step__text">Разработка чертежей и КМД-документации, 3D-моделирование.</p></div>
           </div>
-          <div class="jd-split__media">
-            <picture>
-              <source type="image/webp" sizes="(max-width: 900px) 100vw, 50vw"
-                      srcset="public/images/06_jana_dala_factory-1280.webp 1280w, public/images/06_jana_dala_factory.webp 2000w">
-              <source type="image/jpeg" sizes="(max-width: 900px) 100vw, 50vw"
-                      srcset="public/images/06_jana_dala_factory-1280.jpg 1280w, public/images/06_jana_dala_factory.jpg 2000w">
-              <img src="public/images/06_jana_dala_factory.jpg" alt="Производственный комплекс JANA DALA" width="2000" height="900" loading="lazy">
-            </picture>
+          <div class="cycle__arrow" aria-hidden="true">
+            <svg width="34" height="12" viewBox="0 0 34 12" fill="none" stroke="#14212B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M0 6 H30"/><path d="M25 1.5 L30 6 L25 10.5"/></svg>
+          </div>
+          <div class="step">
+            <svg class="step__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21 L3 11 L9 14 L9 11 L15 14 L15 11 L21 14 L21 21 Z"/><path d="M18 11 L18 3 L21 3 L21 14"/></svg>
+            <div><h3 class="step__title">Производство</h3><p class="step__text">Изготовление металлоконструкций и обработка чёрного металла на современном оборудовании.</p></div>
+          </div>
+          <div class="cycle__arrow" aria-hidden="true">
+            <svg width="34" height="12" viewBox="0 0 34 12" fill="none" stroke="#14212B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M0 6 H30"/><path d="M25 1.5 L30 6 L25 10.5"/></svg>
+          </div>
+          <div class="step">
+            <svg class="step__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8 L21 8 L21 20 L3 20 Z"/><path d="M3 8 L12 12 L21 8"/><path d="M12 12 L12 20"/></svg>
+            <div><h3 class="step__title">Комплектация</h3><p class="step__text">Формирование комплектов для удобной поставки и монтажа.</p></div>
+          </div>
+          <div class="cycle__arrow" aria-hidden="true">
+            <svg width="34" height="12" viewBox="0 0 34 12" fill="none" stroke="#14212B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M0 6 H30"/><path d="M25 1.5 L30 6 L25 10.5"/></svg>
+          </div>
+          <div class="step">
+            <svg class="step__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7 L14 7 L14 16 L2 16 Z"/><path d="M14 10 L18 10 L21 13 L21 16 L14 16"/><path d="M6.5 18.5 a1.6 1.6 0 1 0 0.01 0"/><path d="M17.5 18.5 a1.6 1.6 0 1 0 0.01 0"/></svg>
+            <div><h3 class="step__title">Отгрузка</h3><p class="step__text">Организация доставки быстро и в согласованные сроки.</p></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============================ ПОЛНЫЙ ЦИКЛ ============================ -->
-    <section class="jd-section jd-section--alt">
-      <div class="container">
-        <p class="eyebrow jd-eyebrow">Полный цикл производства</p>
-        <h2 class="jd-h2">Проектирование → производство → комплектация → отгрузка</h2>
-        <div class="jd-steps">
-          <div class="jd-step"><div class="jd-step__num">01</div><div class="jd-step__name">Проектирование</div></div>
-          <div class="jd-step"><div class="jd-step__num">02</div><div class="jd-step__name">Производство</div></div>
-          <div class="jd-step"><div class="jd-step__num">03</div><div class="jd-step__name">Комплектация</div></div>
-          <div class="jd-step"><div class="jd-step__num">04</div><div class="jd-step__name">Отгрузка</div></div>
-        </div>
-        <ul class="jd-list jd-list--light" style="margin-top:36px;max-width:640px">
-          <li>Инженерная подготовка</li>
-          <li>Заводское изготовление</li>
-          <li>Комплектация объекта</li>
-          <li>Организованная логистика</li>
-        </ul>
+    <!-- ============================ HANGARS ============================ -->
+    <section class="section section--white">
+      <div class="hangars__head">
+        <h2 class="s-h2">Ангары для хранения зерна</h2>
+        <span class="badge">Подробнее скоро</span>
       </div>
-    </section>
-
-    <!-- ============================ КОНТРОЛЬ КАЧЕСТВА ============================ -->
-    <section class="jd-section">
-      <div class="container">
-        <p class="eyebrow jd-eyebrow">Контроль качества</p>
-        <h2 class="jd-h2">Контроль на каждом этапе производства</h2>
-        <div class="jd-grid jd-grid--2" style="max-width:900px">
-          <div class="jd-tile"><div class="jd-tile__text">Контроль на каждом этапе производства</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Проверка соответствия разделу КМ</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Визуальный и измерительный контроль</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Гарантия точности изготовления</div></div>
+      <div class="hangars__grid">
+        <div>
+          <p class="hangars__text">Модульные ангары для хранения зерна и других сельскохозяйственных культур. Конструкция разработана для быстрой сборки, надёжной эксплуатации и возможности увеличения объёма.</p>
+          <ul class="hangars__list">
+            <li class="hangars__item"><span class="num">1</span><span class="hangars__label">Металлокаркас здания (ЛСТК)</span></li>
+            <li class="hangars__item"><span class="num">2</span><span class="hangars__label">3D-моделирование</span></li>
+            <li class="hangars__item"><span class="num">3</span><span class="hangars__label">Погрузочно-разгрузочная зона</span></li>
+            <li class="hangars__item"><span class="num">4</span><span class="hangars__label">Модульная, разборная конструкция</span></li>
+          </ul>
+        </div>
+        <div class="hangars__media">
+          <div class="ph ph--light">hangar-3d.png</div>
+          <span class="callout" style="top:18%;left:20%">1</span>
+          <span class="callout" style="top:45%;left:50%">2</span>
+          <span class="callout" style="top:40%;left:82%">3</span>
+          <span class="callout" style="bottom:12%;left:10%">4</span>
         </div>
       </div>
     </section>
 
-    <!-- ============================ ПРЕИМУЩЕСТВА ============================ -->
-    <section class="jd-section jd-section--deep">
-      <div class="container">
-        <p class="eyebrow jd-eyebrow">Преимущества</p>
-        <h2 class="jd-h2">Полный цикл внутри одного завода</h2>
-        <div class="jd-grid">
-          <div class="jd-tile"><div class="jd-tile__text">Полный цикл внутри одного завода</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Точная инженерная оптимизация</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Рациональный расход металла</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Производственная независимость</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Готовность к крупным проектам</div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================ АНГАРЫ ============================ -->
-    <section class="jd-section">
-      <div class="container">
-        <p class="eyebrow jd-eyebrow">Производство ангаров</p>
-        <h2 class="jd-h2">Металлические ангары под задачи объекта</h2>
-        <div class="jd-grid jd-grid--4">
-          <div class="jd-tile"><div class="jd-tile__text">Промышленные ангары</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Складские комплексы</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Производственные цеха</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Объекты аграрного назначения</div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================ ПРОИЗВОДСТВЕННЫЕ ВОЗМОЖНОСТИ ============================ -->
-    <section class="jd-section jd-section--alt">
-      <div class="container">
-        <p class="eyebrow jd-eyebrow">Производственные возможности</p>
-        <h2 class="jd-h2">Объекты промышленного масштаба</h2>
-        <div class="jd-grid jd-grid--2" style="max-width:900px">
-          <div class="jd-tile"><div class="jd-tile__text">Реализация объектов промышленного масштаба</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Производство сложных конструктивных решений</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Одновременная загрузка нескольких проектов</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Гибкость производственных процессов</div></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================ ЛОГИСТИКА ============================ -->
-    <section class="jd-section">
-      <div class="container">
-        <p class="eyebrow jd-eyebrow">Логистика и доставка</p>
-        <h2 class="jd-h2">Доставка по всей территории Казахстана</h2>
-        <div class="jd-grid jd-grid--2" style="max-width:960px">
-          <div class="jd-tile"><div class="jd-tile__text">Собственный автотранспорт</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Организация безопасной погрузки</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Контроль сроков поставки</div></div>
-          <div class="jd-tile"><div class="jd-tile__text">Комплектная отгрузка объекта</div></div>
-        </div>
+    <!-- ============================ SOLUTIONS ============================ -->
+    <section class="section section--alt solutions">
+      <h2 class="s-h2">Готовые решения</h2>
+      <div class="sol-grid">
+        <a class="sol" href="#footer">
+          <div class="sol__img"><div class="ph ph--dark">solution-hangars.jpg</div></div>
+          <div class="sol__grad" aria-hidden="true"></div>
+          <div class="sol__cap"><span class="sol__text">Промышленные ангары</span><span class="sol__arrow" aria-hidden="true">→</span></div>
+        </a>
+        <a class="sol" href="#footer">
+          <div class="sol__img"><div class="ph ph--dark">solution-warehouse.jpg</div></div>
+          <div class="sol__grad" aria-hidden="true"></div>
+          <div class="sol__cap"><span class="sol__text">Складские комплексы</span><span class="sol__arrow" aria-hidden="true">→</span></div>
+        </a>
+        <a class="sol" href="#footer">
+          <div class="sol__img"><div class="ph ph--dark">solution-workshop.jpg</div></div>
+          <div class="sol__grad" aria-hidden="true"></div>
+          <div class="sol__cap"><span class="sol__text">Производственные цеха</span><span class="sol__arrow" aria-hidden="true">→</span></div>
+        </a>
+        <a class="sol" href="#footer">
+          <div class="sol__img"><div class="ph ph--dark">solution-agro.jpg</div></div>
+          <div class="sol__grad" aria-hidden="true"></div>
+          <div class="sol__cap"><span class="sol__text">Объекты аграрного назначения</span><span class="sol__arrow" aria-hidden="true">→</span></div>
+        </a>
       </div>
     </section>
 
     <!-- ============================ CTA ============================ -->
-    <section class="jd-cta" id="contacts">
-      <div class="container jd-cta__grid">
-        <div>
-          <h2 class="jd-cta__title">Обсудить проект металлоконструкций</h2>
-          <p class="jd-cta__text">Направьте задачу — рассчитаем конструкцию, подберём профиль под нагрузку и подготовим комплект к производству.</p>
+    <section class="cta">
+      <div class="ph ph--dark cta__img" style="position:absolute;inset:0">cta-truck.jpg</div>
+      <div class="cta__grad" aria-hidden="true"></div>
+      <div class="cta__content">
+        <h2 class="cta__title">Обсудим ваш проект</h2>
+        <p class="cta__text">Подберём оптимальное решение и подготовим коммерческое предложение.</p>
+        <div class="cta__buttons">
+          <a class="btn btn--accent" href="#footer">Оставить заявку</a>
+          <a class="btn btn--ghost" href="#footer">Скачать презентацию</a>
         </div>
-        <a class="jd-cta__btn" href="mailto:mail@agropioneer.com">Связаться <span class="arrow" aria-hidden="true">→</span></a>
       </div>
     </section>
   </main>
 
   <!-- ============================ FOOTER ============================ -->
-  <footer class="footer">
-    <div class="container footer__grid">
+  <footer class="footer" id="footer">
+    <div class="footer__grid">
       <div>
-        <div class="logo">
-          <span class="logo__mark" aria-hidden="true"></span>
+        <a class="logo" href="index.html">
+          <svg class="logo__mark" width="26" height="22" viewBox="0 0 26 22" fill="none" aria-hidden="true"><path d="M2 20 L8 2 L13 12 L18 2 L24 20" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="logo__word">DAMU GROUP</span>
-        </div>
+        </a>
         <p class="footer__desc">Промышленно-аграрная группа компаний: агротрейдинг, растениеводство, металлоконструкции и сушильное оборудование.</p>
       </div>
       <nav aria-label="Направления">
@@ -341,7 +278,7 @@
         <ul class="footer__list">
           <li><a href="index.html#directions">О группе</a></li>
           <li><a href="index.html#products">Продукция</a></li>
-          <li><a href="#contacts">Контакты</a></li>
+          <li><a href="#footer">Контакты</a></li>
         </ul>
       </nav>
       <div>
@@ -354,9 +291,7 @@
         </ul>
       </div>
     </div>
-    <div class="container">
-      <div class="footer__bottom">© 2026 Damu Group. Все права защищены.</div>
-    </div>
+    <div class="footer__bottom">© 2026 Damu Group. Все права защищены.</div>
   </footer>
 
   <script src="script.js" defer></script>

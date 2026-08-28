@@ -65,21 +65,7 @@ h1, h2, h3 { overflow-wrap: break-word; }
 
 /* ---------- Logo (header + footer) ---------- */
 .logo { display: flex; align-items: center; gap: 12px; }
-.logo__mark {
-  position: relative;
-  width: 28px; height: 28px;
-  flex: none;
-  background: rgba(255,255,255,.16);
-  border: 1px solid rgba(255,255,255,.5);
-}
-.logo__mark::before {
-  content: "";
-  position: absolute;
-  left: 9px; top: 6px;
-  width: 10px; height: 16px;
-  background: #fff;
-  clip-path: polygon(0 100%, 100% 0, 100% 100%);
-}
+.logo__mark { flex: none; display: block; }
 .logo__word {
   font-size: 17px; font-weight: 700; letter-spacing: 0.06em;
   color: #fff;
