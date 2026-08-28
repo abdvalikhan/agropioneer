@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Damu Group — промышленно-аграрная группа компаний</title>
+  <meta name="description" content="Damu Group объединяет торговлю сельскохозяйственной продукцией, сельскохозяйственное производство, промышленное производство и официальное дилерство международного оборудования.">
+  <meta name="theme-color" content="#0F1D28">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ============================ HERO + HEADER ============================ -->
+  <header class="header">
+    <a class="logo" href="#top" aria-label="Damu Group — на главную">
+      <span class="logo__mark" aria-hidden="true"></span>
+      <span class="logo__word">DAMU GROUP</span>
+    </a>
+
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="nav__link" href="#directions">О группе</a>
+
+      <div class="nav__item">
+        <button class="nav__link" type="button" aria-haspopup="true" aria-expanded="false">
+          Агробизнес
+          <svg class="chevron" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="nav__menu" role="menu">
+          <a role="menuitem" href="#directions">Агротрейдинг</a>
+          <a role="menuitem" href="#directions">Растениеводство</a>
+          <a role="menuitem" href="#products">Продукция</a>
+        </div>
+      </div>
+
+      <a class="nav__link" href="#jana">Промышленное производство</a>
+      <a class="nav__link" href="#directions">Сушильное оборудование</a>
+      <a class="nav__link" href="#footer">Контакты</a>
+    </nav>
+
+    <div class="header__right">
+      <button class="search-btn" type="button" aria-label="Поиск">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+          <circle cx="7.8" cy="7.8" r="5.4" stroke="rgba(255,255,255,.9)" stroke-width="1.5"/>
+          <path d="M11.8 11.8 L16 16" stroke="rgba(255,255,255,.9)" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <a class="lang" href="#" aria-label="Язык: русский">
+        RU
+        <svg class="chevron" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu panel -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Меню">
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M6 6l14 14M20 6L6 20" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <a href="#directions">О группе</a>
+    <span>Агробизнес</span>
+    <div class="mobile-menu__sub">
+      <a href="#directions">Агротрейдинг</a>
+      <a href="#directions">Растениеводство</a>
+      <a href="#products">Продукция</a>
+    </div>
+    <a href="#jana">Промышленное производство</a>
+    <a href="#directions">Сушильное оборудование</a>
+    <a href="#footer">Контакты</a>
+  </div>
+
+  <section class="hero" id="top" aria-label="Damu Group">
+    <img class="hero__img" src="public/images/01_hero_silos_field.jpg"
+         alt="Элеваторы и сельскохозяйственные поля Damu Group на закате"
+         width="1440" height="720" loading="eager" fetchpriority="high">
+    <div class="hero__grad-h" aria-hidden="true"></div>
+    <div class="hero__grad-top" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      <div class="hero__head">
+        <span class="hero__line" aria-hidden="true"></span>
+        <h1 class="hero__title">Промышленно-аграрная<br>группа компаний</h1>
+      </div>
+      <p class="hero__lead">Объединяем сельское хозяйство, промышленность и современные технологии для устойчивого развития и долгосрочного роста.</p>
+      <a class="hero__btn" href="#directions">О группе <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <main>
+    <!-- ============================ DIRECTIONS ============================ -->
+    <section class="directions" id="directions">
+      <div class="container">
+        <div class="directions__top">
+          <div>
+            <p class="eyebrow directions__eyebrow">Наши направления</p>
+            <h2 class="directions__title">Четыре направления<br>для устойчивого будущего</h2>
+          </div>
+          <p class="directions__intro">Damu Group — это промышленно-аграрная группа компаний, которая объединяет торговлю сельскохозяйственной продукцией, собственное сельскохозяйственное производство, промышленное производство и официальное дилерство международного оборудования.</p>
+        </div>
+
+        <div class="cards">
+          <!-- 1 -->
+          <article class="card">
+            <div class="card__media" style="background-image:url('public/images/02_agriculture_combine.jpg')" role="img" aria-label="Комбайн на уборке урожая"></div>
+            <div class="card__body">
+              <p class="eyebrow card__eyebrow">FCC PIONEER</p>
+              <h3 class="card__title">Агротрейдинг</h3>
+              <p class="card__text">Поставка, торговля и экспорт сельскохозяйственной продукции.</p>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="card">
+            <div class="card__media" style="background-image:url('public/images/03_agriculture_seedlings.jpg')" role="img" aria-label="Молодые всходы на поле"></div>
+            <div class="card__body">
+              <p class="eyebrow card__eyebrow">KEN DALA</p>
+              <h3 class="card__title">Растениеводство</h3>
+              <p class="card__text">Собственное производство: зерновые, масличные и бобовые культуры.</p>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </div>
+          </article>
+
+          <!-- 3 — accent -->
+          <article class="card card--accent">
+            <div class="card__media" style="background-image:url('public/images/04_jana_dala_steel_frame.jpg')" role="img" aria-label="Металлический каркас промышленного здания"></div>
+            <div class="card__body">
+              <p class="eyebrow card__eyebrow">JANA DALA</p>
+              <h3 class="card__title">Металлоконструкции</h3>
+              <p class="card__text">ЛСТК, металлоизделия и комплектные здания под ключ.</p>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </div>
+          </article>
+
+          <!-- 4 -->
+          <article class="card">
+            <div class="card__media" style="background-image:url('public/images/05_alvan_blanch_equipment.jpg')" role="img" aria-label="Сушильное оборудование для зерна"></div>
+            <div class="card__body">
+              <p class="eyebrow card__eyebrow">Оборудование</p>
+              <h3 class="card__title">Сушильное оборудование</h3>
+              <p class="card__text">Сушильные и перерабатывающие комплексы для зерна: поставка, монтаж, сервис.</p>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ JANA DALA BANNER ============================ -->
+    <section class="jana" id="jana" aria-label="Jana Dala — от профиля до готового здания">
+      <img class="jana__img" src="public/images/06_jana_dala_factory.jpg"
+           alt="Производственный цех Jana Dala" width="1440" height="260" loading="lazy">
+      <div class="jana__grad" aria-hidden="true"></div>
+      <div class="container jana__content">
+        <p class="eyebrow jana__eyebrow">Jana Dala</p>
+        <h2 class="jana__title">От профиля<br>до готового здания</h2>
+        <ul class="jana__tags"><li>ЛСТК</li><li>Металлоконструкции</li><li>Металлоизделия</li><li>Комплектные здания</li></ul>
+        <a class="jana__btn" href="#footer">Подробнее <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- ============================ PRODUCTS ============================ -->
+    <section class="products" id="products">
+      <div class="container products__grid">
+        <div class="products__aside">
+          <p class="eyebrow products__eyebrow">Продукция</p>
+          <h2 class="products__title">Сельскохозяйственная<br>продукция</h2>
+          <p class="products__text">Поставляем зерновые, масличные и бобовые культуры высокого качества на внутренний и международный рынки.</p>
+          <a class="products__link" href="#products">Весь каталог культур <span class="arrow" aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="crops">
+          <figure class="crop">
+            <div class="crop__media" style="background-image:url('public/images/07_wheat.jpg')" role="img" aria-label="Пшеница"></div>
+            <figcaption class="crop__caption">Пшеница</figcaption>
+          </figure>
+          <figure class="crop">
+            <div class="crop__media" style="background-image:url('public/images/08_barley.jpg')" role="img" aria-label="Ячмень"></div>
+            <figcaption class="crop__caption">Ячмень</figcaption>
+          </figure>
+          <figure class="crop">
+            <div class="crop__media" style="background-image:url('public/images/09_flax.jpg')" role="img" aria-label="Лён"></div>
+            <figcaption class="crop__caption">Лён</figcaption>
+          </figure>
+          <figure class="crop">
+            <div class="crop__media" style="background-image:url('public/images/10_sunflower.jpg')" role="img" aria-label="Подсолнечник"></div>
+            <figcaption class="crop__caption">Подсолнечник</figcaption>
+          </figure>
+          <figure class="crop">
+            <div class="crop__media" style="background-image:url('public/images/11_rapeseed.jpg')" role="img" aria-label="Рапс"></div>
+            <figcaption class="crop__caption">Рапс</figcaption>
+          </figure>
+          <figure class="crop">
+            <div class="crop__media" style="background-image:url('public/images/12_soybean.jpg')" role="img" aria-label="Соя"></div>
+            <figcaption class="crop__caption">Соя</figcaption>
+          </figure>
+          <figure class="crop">
+            <div class="crop__media" style="background-image:url('public/images/13_safflower.jpg')" role="img" aria-label="Сафлор"></div>
+            <figcaption class="crop__caption">Сафлор</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ UNITY BANNER ============================ -->
+    <section class="unity" aria-label="Сила в объединении наших компетенций">
+      <img class="unity__img" src="public/images/14_footer_landscape.jpg"
+           alt="Аграрный ландшафт и инфраструктура Damu Group" width="1440" height="200" loading="lazy">
+      <div class="unity__grad" aria-hidden="true"></div>
+      <div class="container unity__content">
+        <h2 class="unity__title">Сила в объединении<br>наших компетенций</h2>
+        <p class="unity__text">Damu Group — это экспертиза, опыт и современные технологии, которые работают на развитие.</p>
+        <a class="unity__btn" href="#footer">Связаться с нами</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer" id="footer">
+    <div class="container footer__grid">
+      <div>
+        <div class="logo">
+          <span class="logo__mark" aria-hidden="true"></span>
+          <span class="logo__word">DAMU GROUP</span>
+        </div>
+        <p class="footer__desc">Промышленно-аграрная группа компаний: агротрейдинг, растениеводство, металлоконструкции и сушильное оборудование.</p>
+      </div>
+
+      <nav aria-label="Направления">
+        <p class="footer__col-title">Направления</p>
+        <ul class="footer__list">
+          <li><a href="#directions">Агротрейдинг</a></li>
+          <li><a href="#directions">Сельскохозяйственное производство</a></li>
+          <li><a href="#jana">Промышленное производство</a></li>
+          <li><a href="#directions">Сушильное оборудование</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Компания">
+        <p class="footer__col-title">Компания</p>
+        <ul class="footer__list">
+          <li><a href="#directions">О группе</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Карьера</a></li>
+          <li><a href="#footer">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <p class="footer__col-title">Контакты</p>
+        <ul class="footer__list">
+          <li><span>г. Астана, пр. Мангилик Ел, 55</span></li>
+          <li><span>+7 (717) 000 00 00</span></li>
+          <li><span>info@damugroup.kz</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer__bottom">© 2026 Damu Group. Все права защищены.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
