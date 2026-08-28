@@ -260,6 +260,12 @@ h1, h2, h3 { overflow-wrap: break-word; }
   margin-top: 22px;
   font-size: 20px; line-height: 1; color: rgba(255,255,255,.85);
 }
+/* card photos (exact filenames from the production pack) */
+.card__media--agrotrading { background-image: url("public/images/02_agriculture_combine.jpg"); }
+.card__media--agriculture { background-image: url("public/images/03_agriculture_seedlings.jpg"); }
+.card__media--jana        { background-image: url("public/images/04_jana_dala_steel_frame.jpg"); }
+.card__media--drying      { background-image: url("public/images/05_alvan_blanch_equipment.jpg"); }
+
 /* accent third card */
 .card--accent {
   margin: -28px 0;
@@ -345,6 +351,14 @@ h1, h2, h3 { overflow-wrap: break-word; }
   background-color: #e8e8e2;
   background-size: cover; background-position: center;
 }
+/* crop photos (exact filenames from the production pack) */
+.crop__media--wheat     { background-image: url("public/images/07_wheat.jpg"); }
+.crop__media--barley    { background-image: url("public/images/08_barley.jpg"); }
+.crop__media--flax      { background-image: url("public/images/09_flax.jpg"); }
+.crop__media--sunflower { background-image: url("public/images/10_sunflower.jpg"); }
+.crop__media--rapeseed  { background-image: url("public/images/11_rapeseed.jpg"); }
+.crop__media--soybean   { background-image: url("public/images/12_soybean.jpg"); }
+.crop__media--safflower { background-image: url("public/images/13_safflower.jpg"); }
 .crop__caption {
   margin-top: 12px; text-align: center;
   font-size: 13px; font-weight: 500; color: var(--ink);
