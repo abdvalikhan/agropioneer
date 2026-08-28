@@ -56,3 +56,32 @@
     });
   }
 })();
+
+/* ---- Language switcher (ru / kk / en / zh via subdomains, same page) ---- */
+(function () {
+  "use strict";
+  var host = location.host;
+  var m = host.match(/^(kz|en|cn)\./);
+  var bare = m ? host.slice(3) : host;
+  var hosts = { ru: bare, kk: "kz." + bare, en: "en." + bare, zh: "cn." + bare };
+  document.querySelectorAll("[data-lang-switch]").forEach(function (sw) {
+    var btn = sw.querySelector(".lang__btn");
+    sw.querySelectorAll("[data-lang]").forEach(function (a) {
+      var t = hosts[a.getAttribute("data-lang")];
+      if (t) a.href = location.protocol + "//" + t + location.pathname + location.hash;
+    });
+    if (btn) {
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        var open = sw.classList.toggle("is-open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
+    }
+    document.addEventListener("click", function (e) {
+      if (!sw.contains(e.target)) { sw.classList.remove("is-open"); if (btn) btn.setAttribute("aria-expanded", "false"); }
+    });
+    sw.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") { sw.classList.remove("is-open"); if (btn) { btn.setAttribute("aria-expanded", "false"); btn.focus(); } }
+    });
+  });
+})();

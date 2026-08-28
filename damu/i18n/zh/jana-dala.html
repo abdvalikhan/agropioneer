@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jana Dala — 工业生产</title>
+  <meta name="description" content="JANA DALA — Damu Group 的工业板块：全周期金属结构与轻钢结构、黑色金属加工、金属仓库、覆盖哈萨克斯坦的物流。">
+  <meta name="theme-color" content="#0B1522">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="jana-dala.css">
+</head>
+<body>
+
+  <!-- ============================ HERO + HEADER ============================ -->
+  <section class="hero">
+    <picture><source type="image/webp" srcset="public/images/steel-frame.webp"><img class="hero__img" src="public/images/steel-frame.jpg" alt="JANA DALA 工业建筑的金属框架" width="1800" height="1100" loading="eager" fetchpriority="high"></picture>
+    <div class="hero__grad" aria-hidden="true"></div>
+
+    <header class="header">
+      <a class="logo" href="index.html" aria-label="Damu Group — 返回首页">
+        <svg class="logo__mark" width="26" height="22" viewBox="0 0 26 22" fill="none" aria-hidden="true"><path d="M2 20 L8 2 L13 12 L18 2 L24 20" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="logo__word">DAMU GROUP</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a class="nav__link" href="index.html#directions">关于集团</a>
+        <div class="nav__item">
+          <button class="nav__link" type="button" aria-haspopup="true" aria-expanded="false">农业业务
+            <svg class="chevron" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav__menu" role="menu">
+            <a role="menuitem" href="index.html#directions">农产品贸易</a>
+            <a role="menuitem" href="index.html#directions">种植业</a>
+            <a role="menuitem" href="index.html#products">产品</a>
+          </div>
+        </div>
+        <a class="nav__link nav__link--active" href="jana-dala.html" aria-current="page">工业生产</a>
+        <a class="nav__link" href="index.html#directions">干燥设备</a>
+        <a class="nav__link" href="#footer">联系方式</a>
+      </nav>
+      <div class="header__right">
+        <div class="lang" data-lang-switch>
+          <button class="lang__btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="语言"><span class="lang__cur">CN</span>
+            <svg class="chevron" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="lang__menu" role="menu">
+            <a role="menuitem" data-lang="ru" href="#">Русский</a>
+            <a role="menuitem" data-lang="kk" href="#">Қазақша</a>
+            <a role="menuitem" data-lang="en" href="#">English</a>
+            <a role="menuitem" data-lang="zh" href="#">中文</a>
+          </div>
+        </div>
+        <button class="burger" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">JANA DALA</p>
+      <h1 class="hero__title">全周期金属结构<br>与轻钢结构</h1>
+      <p class="hero__slogan">设计&nbsp;•&nbsp;生产&nbsp;•&nbsp;配套&nbsp;•&nbsp;交付</p>
+      <div class="hero__buttons">
+        <a class="btn btn--accent" href="#footer">提交申请</a>
+        <a class="btn btn--ghost" href="#footer">下载介绍资料</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="菜单">
+    <button class="mobile-menu__close" type="button" aria-label="关闭菜单">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M6 6l14 14M20 6L6 20" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <a href="index.html#directions">关于集团</a>
+    <span>农业业务</span>
+    <div class="mobile-menu__sub">
+      <a href="index.html#directions">农产品贸易</a>
+      <a href="index.html#directions">种植业</a>
+      <a href="index.html#products">产品</a>
+    </div>
+    <a href="jana-dala.html">工业生产</a>
+    <a href="index.html#directions">干燥设备</a>
+    <a href="#footer">联系方式</a>
+    <div class="mobile-menu__lang" data-lang-switch><a data-lang="ru" href="#">RU</a><a data-lang="kk" href="#">KZ</a><a data-lang="en" href="#">EN</a><a data-lang="zh" href="#">CN</a></div>
+  </div>
+
+  <main>
+    <!-- ============================ INTRO ============================ -->
+    <section class="section section--white">
+      <div class="intro">
+        <div>
+          <p class="eyebrow intro__eyebrow" style="color:var(--accent)">JANA DALA</p>
+          <h2 class="intro__title">DAMU GROUP<br>工业板块</h2>
+          <p class="intro__text">我们为各行业制造轻钢结构、加工黑色金属，并生产金属结构和金属仓库。</p>
+        </div>
+        <div class="intro__media">
+          <picture><source type="image/webp" srcset="public/images/hero-factory.webp"><img src="public/images/hero-factory.jpg" alt="JANA DALA 生产综合体" width="2800" height="1220" loading="lazy"></picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CAPABILITIES ============================ -->
+    <section class="section section--alt">
+      <h2 class="s-h2">我们的能力</h2>
+      <div class="caps">
+        <article class="cap">
+          <div class="cap__row">
+            <svg class="cap__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7 L12 3 L20 7 L20 17 L12 21 L4 17 Z"/><path d="M4 7 L12 11 L20 7"/><path d="M12 11 L12 21"/></svg>
+            <h3 class="cap__title">轻钢结构</h3>
+          </div>
+          <p class="cap__text">生产轻钢结构和建筑轻钢构件</p>
+        </article>
+        <article class="cap">
+          <div class="cap__row">
+            <svg class="cap__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18 L9 12"/><path d="M8 13 L11 10 L14 13 L11 16 Z"/><path d="M13 9 L18 4 L21 7 L16 12"/><path d="M3 21 L7 21"/></svg>
+            <h3 class="cap__title">黑色金属加工</h3>
+          </div>
+          <p class="cap__text">等离子切割、折弯、焊接和机械加工</p>
+        </article>
+        <article class="cap">
+          <div class="cap__row">
+            <svg class="cap__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20 L3 11 L12 5 L21 11 L21 20 Z"/><path d="M7 20 L7 14 L17 14 L17 20"/></svg>
+            <h3 class="cap__title">金属仓库</h3>
+          </div>
+          <p class="cap__text">用于设备存储和农业领域的框架解决方案</p>
+        </article>
+        <article class="cap">
+          <div class="cap__row">
+            <svg class="cap__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7 L14 7 L14 16 L2 16 Z"/><path d="M14 10 L18 10 L21 13 L21 16 L14 16"/><path d="M6.5 18.5 a1.6 1.6 0 1 0 0.01 0"/><path d="M17.5 18.5 a1.6 1.6 0 1 0 0.01 0"/></svg>
+            <h3 class="cap__title">覆盖哈萨克斯坦的物流</h3>
+          </div>
+          <p class="cap__text">我们安排在全国范围内交付金属结构</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================ LSTK ============================ -->
+    <section class="section section--white">
+      <h2 class="s-h2">轻钢结构与黑色金属加工</h2>
+      <div class="lstk">
+        <article class="profile">
+          <h3 class="profile__title">C型型材</h3>
+          <p class="profile__text">用于墙体、檩条和承重构件。</p>
+          <div class="profile__media"><picture><source type="image/webp" srcset="public/images/profile-c.webp"><img src="public/images/profile-c.png" alt="C型钢型材" width="800" height="600" loading="lazy"></picture></div>
+        </article>
+        <article class="profile">
+          <h3 class="profile__title">Z（西格玛）型材</h3>
+          <p class="profile__text">用于楼板、檩条和框架结构。</p>
+          <div class="profile__media"><picture><source type="image/webp" srcset="public/images/profile-z.webp"><img src="public/images/profile-z.png" alt="Z（西格玛）型钢" width="800" height="600" loading="lazy"></picture></div>
+        </article>
+        <article class="profile">
+          <h3 class="profile__title">U型型材</h3>
+          <p class="profile__text">用于连接、横梁和加固。</p>
+          <div class="profile__media"><picture><source type="image/webp" srcset="public/images/profile-p.webp"><img src="public/images/profile-p.png" alt="U型钢型材" width="800" height="600" loading="lazy"></picture></div>
+        </article>
+        <div class="lstk__photo"><picture><source type="image/webp" srcset="public/images/metal-cutting.webp"><img src="public/images/metal-cutting.jpg" alt="金属等离子切割" width="1600" height="920" loading="lazy"></picture></div>
+      </div>
+    </section>
+
+    <!-- ============================ PRODUCTION CYCLE ============================ -->
+    <section class="section section--alt">
+      <h2 class="s-h2">生产流程</h2>
+      <div class="cycle">
+        <div class="cycle__grid">
+          <div class="step">
+            <svg class="step__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3 L20 3 L20 21 L4 21 Z"/><path d="M8 8 L16 8"/><path d="M8 12 L16 12"/><path d="M8 16 L13 16"/></svg>
+            <div><h3 class="step__title">设计</h3><p class="step__text">绘制图纸和金属结构详图（KMD）文件，3D建模。</p></div>
+          </div>
+          <div class="cycle__arrow" aria-hidden="true">
+            <svg width="34" height="12" viewBox="0 0 34 12" fill="none" stroke="#14212B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M0 6 H30"/><path d="M25 1.5 L30 6 L25 10.5"/></svg>
+          </div>
+          <div class="step">
+            <svg class="step__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21 L3 11 L9 14 L9 11 L15 14 L15 11 L21 14 L21 21 Z"/><path d="M18 11 L18 3 L21 3 L21 14"/></svg>
+            <div><h3 class="step__title">生产</h3><p class="step__text">在现代化设备上制造金属结构并加工黑色金属。</p></div>
+          </div>
+          <div class="cycle__arrow" aria-hidden="true">
+            <svg width="34" height="12" viewBox="0 0 34 12" fill="none" stroke="#14212B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M0 6 H30"/><path d="M25 1.5 L30 6 L25 10.5"/></svg>
+          </div>
+          <div class="step">
+            <svg class="step__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8 L21 8 L21 20 L3 20 Z"/><path d="M3 8 L12 12 L21 8"/><path d="M12 12 L12 20"/></svg>
+            <div><h3 class="step__title">配套</h3><p class="step__text">组配套件，便于交付和安装。</p></div>
+          </div>
+          <div class="cycle__arrow" aria-hidden="true">
+            <svg width="34" height="12" viewBox="0 0 34 12" fill="none" stroke="#14212B" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M0 6 H30"/><path d="M25 1.5 L30 6 L25 10.5"/></svg>
+          </div>
+          <div class="step">
+            <svg class="step__icon" viewBox="0 0 24 24" fill="none" stroke="#1657C0" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 7 L14 7 L14 16 L2 16 Z"/><path d="M14 10 L18 10 L21 13 L21 16 L14 16"/><path d="M6.5 18.5 a1.6 1.6 0 1 0 0.01 0"/><path d="M17.5 18.5 a1.6 1.6 0 1 0 0.01 0"/></svg>
+            <div><h3 class="step__title">发货</h3><p class="step__text">在约定期限内快速安排交付。</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ HANGARS ============================ -->
+    <section class="section section--white">
+      <div class="hangars__head">
+        <h2 class="s-h2">粮食储存仓库</h2>
+        <span class="badge">详情即将公布</span>
+      </div>
+      <div class="hangars__grid">
+        <div>
+          <p class="hangars__text">用于储存粮食及其他农作物的模块化仓库。该结构专为快速组装、可靠运行和扩容能力而设计。</p>
+          <ul class="hangars__list">
+            <li class="hangars__item"><span class="num">1</span><span class="hangars__label">建筑金属框架（轻钢结构）</span></li>
+            <li class="hangars__item"><span class="num">2</span><span class="hangars__label">3D建模</span></li>
+            <li class="hangars__item"><span class="num">3</span><span class="hangars__label">装卸区</span></li>
+            <li class="hangars__item"><span class="num">4</span><span class="hangars__label">模块化、可拆卸结构</span></li>
+          </ul>
+        </div>
+        <div class="hangars__media">
+          <picture><source type="image/webp" srcset="public/images/hangar-3d.webp"><img src="public/images/hangar-3d.png" alt="JANA DALA 金属仓库的3D模型" width="1400" height="930" loading="lazy"></picture>
+          <span class="callout" style="top:18%;left:20%">1</span>
+          <span class="callout" style="top:45%;left:50%">2</span>
+          <span class="callout" style="top:40%;left:82%">3</span>
+          <span class="callout" style="bottom:12%;left:10%">4</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ SOLUTIONS ============================ -->
+    <section class="section section--alt solutions">
+      <h2 class="s-h2">成套解决方案</h2>
+      <div class="sol-grid">
+        <a class="sol" href="#footer">
+          <picture><source type="image/webp" srcset="public/images/solution-industrial-hangar.webp"><img class="sol__img" src="public/images/solution-industrial-hangar.jpg" alt="工业仓库" width="1400" height="850" loading="lazy"></picture>
+          <div class="sol__grad" aria-hidden="true"></div>
+          <div class="sol__cap"><span class="sol__text">工业仓库</span><span class="sol__arrow" aria-hidden="true">→</span></div>
+        </a>
+        <a class="sol" href="#footer">
+          <picture><source type="image/webp" srcset="public/images/solution-warehouse.webp"><img class="sol__img" src="public/images/solution-warehouse.jpg" alt="仓储综合体" width="1400" height="850" loading="lazy"></picture>
+          <div class="sol__grad" aria-hidden="true"></div>
+          <div class="sol__cap"><span class="sol__text">仓储综合体</span><span class="sol__arrow" aria-hidden="true">→</span></div>
+        </a>
+        <a class="sol" href="#footer">
+          <picture><source type="image/webp" srcset="public/images/solution-production-shop.webp"><img class="sol__img" src="public/images/solution-production-shop.jpg" alt="生产车间" width="1400" height="850" loading="lazy"></picture>
+          <div class="sol__grad" aria-hidden="true"></div>
+          <div class="sol__cap"><span class="sol__text">生产车间</span><span class="sol__arrow" aria-hidden="true">→</span></div>
+        </a>
+        <a class="sol" href="#footer">
+          <picture><source type="image/webp" srcset="public/images/solution-agri-building.webp"><img class="sol__img" src="public/images/solution-agri-building.jpg" alt="农业设施" width="1400" height="850" loading="lazy"></picture>
+          <div class="sol__grad" aria-hidden="true"></div>
+          <div class="sol__cap"><span class="sol__text">农业设施</span><span class="sol__arrow" aria-hidden="true">→</span></div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================ CTA ============================ -->
+    <section class="cta">
+      <picture><source type="image/webp" srcset="public/images/logistics-truck.webp"><img class="cta__img" src="public/images/logistics-truck.jpg" alt="日落时装载金属结构的卡车" width="2400" height="760" loading="lazy"></picture>
+      <div class="cta__grad" aria-hidden="true"></div>
+      <div class="cta__content">
+        <h2 class="cta__title">让我们探讨您的项目</h2>
+        <p class="cta__text">我们将为您选择最佳方案并准备商业报价。</p>
+        <div class="cta__buttons">
+          <a class="btn btn--accent" href="#footer">提交申请</a>
+          <a class="btn btn--ghost" href="#footer">下载介绍资料</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer" id="footer">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html">
+          <svg class="logo__mark" width="26" height="22" viewBox="0 0 26 22" fill="none" aria-hidden="true"><path d="M2 20 L8 2 L13 12 L18 2 L24 20" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="logo__word">DAMU GROUP</span>
+        </a>
+        <p class="footer__desc">工业农业企业集团：农产品贸易、种植业、金属结构和干燥设备。</p>
+      </div>
+      <nav aria-label="业务方向">
+        <p class="footer__col-title">业务方向</p>
+        <ul class="footer__list">
+          <li><a href="index.html#directions">农产品贸易</a></li>
+          <li><a href="index.html#directions">农业生产</a></li>
+          <li><a href="jana-dala.html">工业生产</a></li>
+          <li><a href="index.html#directions">干燥设备</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="公司">
+        <p class="footer__col-title">公司</p>
+        <ul class="footer__list">
+          <li><a href="index.html#directions">关于集团</a></li>
+          <li><a href="index.html#products">产品</a></li>
+          <li><a href="#footer">联系方式</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer__col-title">联系方式</p>
+        <ul class="footer__list">
+          <li><span>阿斯塔纳市，沙尔巴克科尔街，<br>«卡拉奥特克尔»VIP小区，C-5</span></li>
+          <li><a href="tel:+77773106825">+7 777 310 68 25</a></li>
+          <li><a href="tel:+77773106823">+7 777 310 68 23</a></li>
+          <li><a href="mailto:mail@agropioneer.com">mail@agropioneer.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 Damu Group. 版权所有。</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
