@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FCC Pioneer — промышленно-аграрная группа компаний</title>
+  <meta name="description" content="FCC Pioneer объединяет сельскохозяйственное производство, агротрейдинг, промышленное производство и международные технологии.">
+  <meta name="theme-color" content="#0F1D28">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FCC Pioneer">
+  <meta property="og:title" content="FCC Pioneer — промышленно-аграрная группа компаний">
+  <meta property="og:description" content="Объединяем сельскохозяйственное производство, агротрейдинг, промышленность и международные технологии.">
+  <meta property="og:url" content="https://agropioneer.com/">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:image" content="img/poster.jpg">
+
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="canonical" href="https://agropioneer.com/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="logo" href="/">
+        <span class="logo__mark" aria-hidden="true">FP</span>
+        <span>FCC Pioneer</span>
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link" href="about">О группе</a>
+
+        <div class="nav__item nav__item--has-menu">
+          <button class="nav__link nav__toggle" type="button" aria-expanded="false" aria-haspopup="true">
+            Агробизнес
+            <svg class="nav__caret" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav__menu" role="menu">
+            <a class="nav__menu-link" role="menuitem" href="#directions">Сельскохозяйственное производство</a>
+            <a class="nav__menu-link" role="menuitem" href="#products">Агротрейдинг</a>
+          </div>
+        </div>
+
+        <a class="nav__link" href="#janadala">JANA DALA</a>
+        <a class="nav__link" href="#alvan">Alvan Blanch</a>
+        <a class="nav__link" href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__right">
+        <button class="icon-btn header__search" type="button" aria-label="Поиск">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.5"/><path d="M13 13l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="lang-switch js-lang" type="button" data-lang="ru">
+          RU
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Меню">
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="mobile-menu__list" aria-label="Мобильная навигация">
+      <a class="mobile-menu__link" href="about">О группе</a>
+      <div>
+        <span class="mobile-menu__link" style="border-bottom:0;padding-bottom:4px">Агробизнес</span>
+        <div class="mobile-menu__sub">
+          <a href="#directions">Сельскохозяйственное производство</a>
+          <a href="#products">Агротрейдинг</a>
+        </div>
+      </div>
+      <a class="mobile-menu__link" href="#janadala">JANA DALA</a>
+      <a class="mobile-menu__link" href="#alvan">Alvan Blanch</a>
+      <a class="mobile-menu__link" href="#contacts">Контакты</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <a href="tel:+77773106825">+7 777 310 68 25</a>
+      <a href="tel:+77773106823">+7 777 310 68 23</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============================ 1. HERO ============================ -->
+    <section class="hero" aria-label="FCC Pioneer">
+      <div class="hero__media">
+        <!-- PHOTO SLOT: масштабный сельхозобъект / элеватор / поля на закате.
+             Замените этот блок на <img src="img/redesign/hero.jpg" alt="Сельскохозяйственные поля FCC Pioneer на закате"> -->
+        <div class="ph" style="width:100%;height:100%" role="img" aria-label="Сельскохозяйственные поля и инфраструктура FCC Pioneer"></div>
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container hero__container">
+        <div class="hero__content">
+          <span class="eyebrow eyebrow--light">Промышленно-аграрная группа компаний</span>
+          <h1 class="hero__title">FCC&nbsp;Pioneer</h1>
+          <p class="hero__subtitle">Объединяем сельскохозяйственное производство, агротрейдинг, промышленность и международные технологии.</p>
+          <div class="hero__cta">
+            <a class="btn btn--ghost" href="about">О группе <span class="btn__arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+      <span class="hero__scroll" aria-hidden="true">Листайте вниз</span>
+    </section>
+
+    <!-- ======================= 2. DIRECTIONS ======================= -->
+    <section class="directions" id="directions">
+      <div class="container">
+        <div class="directions__head">
+          <div>
+            <span class="eyebrow">Наши направления</span>
+            <h2 class="h2 directions__title">Четыре направления<br>для устойчивого&nbsp;роста</h2>
+          </div>
+          <p class="directions__intro">FCC Pioneer развивает сельское хозяйство, торговлю сельхозпродукцией, промышленное производство и международные технологии в рамках единой группы.</p>
+        </div>
+
+        <div class="dir-grid">
+          <!-- 01 -->
+          <a class="dir-card" href="#products">
+            <div class="dir-card__media" aria-hidden="true">
+              <!-- PHOTO SLOT: масштабные поля / техника / сельхозпроизводство -->
+              <div class="ph"></div>
+            </div>
+            <span class="dir-card__num">01</span>
+            <div class="dir-card__body">
+              <span class="dir-card__eyebrow">KEN DALA</span>
+              <h3 class="dir-card__title">Сельскохозяйственное производство</h3>
+              <p class="dir-card__text">Выращивание зерновых, масличных и бобовых культур.</p>
+              <span class="dir-card__arrow">Подробнее <span class="btn__arrow" aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <!-- 02 -->
+          <a class="dir-card" href="#products">
+            <div class="dir-card__media" aria-hidden="true">
+              <!-- PHOTO SLOT: зерно / элеватор / логистика / хранение -->
+              <div class="ph"></div>
+            </div>
+            <span class="dir-card__num">02</span>
+            <div class="dir-card__body">
+              <span class="dir-card__eyebrow">Агротрейдинг</span>
+              <h3 class="dir-card__title">Торговля сельскохозяйственной продукцией</h3>
+              <p class="dir-card__text">Поставка, торговля и экспорт сельскохозяйственной продукции.</p>
+              <span class="dir-card__arrow">Подробнее <span class="btn__arrow" aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <!-- 03 -->
+          <a class="dir-card" href="#janadala">
+            <div class="dir-card__media" aria-hidden="true">
+              <!-- PHOTO SLOT: промышленный metal frame / производство -->
+              <div class="ph"></div>
+            </div>
+            <span class="dir-card__num">03</span>
+            <div class="dir-card__body">
+              <span class="dir-card__eyebrow">JANA DALA</span>
+              <h3 class="dir-card__title">Промышленное производство</h3>
+              <p class="dir-card__text">ЛСТК, металлоконструкции, металлоизделия и комплектные здания.</p>
+              <span class="dir-card__arrow">Подробнее <span class="btn__arrow" aria-hidden="true">→</span></span>
+            </div>
+          </a>
+
+          <!-- 04 -->
+          <a class="dir-card" href="#alvan">
+            <div class="dir-card__media" aria-hidden="true">
+              <!-- PHOTO SLOT: оборудование Alvan Blanch -->
+              <div class="ph"></div>
+            </div>
+            <span class="dir-card__num">04</span>
+            <div class="dir-card__body">
+              <span class="dir-card__eyebrow">Alvan Blanch</span>
+              <h3 class="dir-card__title">Оборудование и технологии</h3>
+              <p class="dir-card__text">Официальный эксклюзивный дилер Alvan Blanch на территории СНГ, кроме России.</p>
+              <span class="dir-card__arrow">Подробнее <span class="btn__arrow" aria-hidden="true">→</span></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 3. JANA DALA banner ======================= -->
+    <section class="janadala" id="janadala" aria-label="JANA DALA — промышленное производство">
+      <div class="janadala__media" aria-hidden="true">
+        <!-- PHOTO SLOT: промышленное производство / готовое здание (справа) -->
+        <div class="ph" style="width:100%;height:100%"></div>
+      </div>
+      <div class="janadala__overlay" aria-hidden="true"></div>
+      <div class="container janadala__container">
+        <div class="janadala__inner">
+          <span class="eyebrow eyebrow--light">JANA DALA</span>
+          <h2 class="h2 janadala__title">От профиля<br>до готового&nbsp;здания</h2>
+          <ul class="janadala__tags">
+            <li>ЛСТК</li><li>Металлоконструкции</li><li>Металлоизделия</li><li>Комплектные здания</li>
+          </ul>
+          <div class="janadala__cta">
+            <a class="btn btn--light" href="#contacts">Подробнее <span class="btn__arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 4. AGRI PRODUCTS ======================= -->
+    <section class="products" id="products">
+      <div class="container">
+        <div class="products__grid">
+          <aside>
+            <span class="eyebrow">Продукция</span>
+            <h2 class="h2 products__aside-title">Сельскохозяйственная<br>продукция</h2>
+            <p class="products__aside-text">Поставляем зерновые, масличные и бобовые культуры на внутренний и международный рынки.</p>
+            <a class="link-arrow" href="#products">Весь каталог культур <span class="btn__arrow" aria-hidden="true">→</span></a>
+          </aside>
+
+          <div class="crop-grid">
+            <a class="crop" href="wheat">
+              <div class="crop__media"><img src="img/pr-big-1.png" alt="Пшеница" loading="lazy"></div>
+              <div class="crop__label">Пшеница</div>
+            </a>
+            <a class="crop" href="barley">
+              <div class="crop__media"><img src="img/pr-big-2.png" alt="Ячмень" loading="lazy"></div>
+              <div class="crop__label">Ячмень</div>
+            </a>
+            <a class="crop" href="flax">
+              <div class="crop__media"><img src="img/pr3.png" alt="Лён" loading="lazy"></div>
+              <div class="crop__label">Лён</div>
+            </a>
+            <a class="crop" href="sunflower">
+              <div class="crop__media"><img src="img/pr-big-4.png" alt="Подсолнечник" loading="lazy"></div>
+              <div class="crop__label">Подсолнечник</div>
+            </a>
+            <a class="crop" href="colza">
+              <div class="crop__media"><img src="img/pr-big-5.png" alt="Рапс" loading="lazy"></div>
+              <div class="crop__label">Рапс</div>
+            </a>
+            <a class="crop" href="soy">
+              <div class="crop__media"><img src="img/pr-big-7.png" alt="Соя" loading="lazy"></div>
+              <div class="crop__label">Соя</div>
+            </a>
+            <a class="crop" href="safflower">
+              <!-- PHOTO SLOT: у сафлора нет исходного фото — временный тёмный плейсхолдер -->
+              <div class="crop__media"><div class="ph" role="img" aria-label="Сафлор"></div></div>
+              <div class="crop__label">Сафлор</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 5. ALVAN BLANCH ======================= -->
+    <section class="alvan" id="alvan">
+      <div class="container">
+        <div class="alvan__grid">
+          <div>
+            <span class="eyebrow">Alvan Blanch</span>
+            <h2 class="h2 alvan__title">Международные технологии<br>для сельского хозяйства и&nbsp;переработки</h2>
+            <p class="alvan__text">FCC Pioneer — официальный эксклюзивный дилер Alvan Blanch на территории СНГ, кроме России.</p>
+            <a class="btn btn--dark" href="#contacts">Alvan Blanch <span class="btn__arrow" aria-hidden="true">→</span></a>
+          </div>
+          <div class="alvan__media" aria-hidden="true">
+            <!-- PHOTO SLOT: оборудование Alvan Blanch / промышленный объект / engineering -->
+            <div class="ph" style="width:100%;height:100%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= 6. UNITY banner ======================= -->
+    <section class="unity" aria-label="Сила в объединении компетенций">
+      <div class="unity__media" aria-hidden="true">
+        <!-- PHOTO SLOT: масштабные поля / ландшафт / инфраструктура -->
+        <div class="ph" style="width:100%;height:100%"></div>
+      </div>
+      <div class="unity__overlay" aria-hidden="true"></div>
+      <div class="container unity__container">
+        <div class="unity__grid">
+          <h2 class="unity__title">Сила в объединении<br>наших&nbsp;компетенций</h2>
+          <p class="unity__text">FCC Pioneer объединяет сельское хозяйство, промышленное производство и международные технологии.</p>
+          <div class="unity__cta">
+            <a class="btn btn--ghost" href="#contacts">Связаться с нами <span class="btn__arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer" id="contacts" itemscope itemtype="https://schema.org/Organization">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand-name" itemprop="name">FCC Pioneer</div>
+          <p class="footer__desc">Промышленно-аграрная группа компаний: сельскохозяйственное производство, агротрейдинг, промышленное производство и международные технологии.</p>
+          <div class="footer__socials">
+            <a href="#" target="_blank" rel="noopener" aria-label="YouTube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 7.5a3 3 0 0 0-2.1-2.1C19 5 12 5 12 5s-7 0-8.9.4A3 3 0 0 0 1 7.5 31 31 0 0 0 .6 12 31 31 0 0 0 1 16.5a3 3 0 0 0 2.1 2.1C5 19 12 19 12 19s7 0 8.9-.4a3 3 0 0 0 2.1-2.1A31 31 0 0 0 23.4 12 31 31 0 0 0 23 7.5ZM9.75 15.02V8.98L15 12l-5.25 3.02Z"/></svg>
+            </a>
+            <a href="https://wa.me/77773106825" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2Zm5.5 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.1-.7-2.6-1-4.3-3.7-4.4-3.9-.1-.2-1.1-1.4-1.1-2.7 0-1.3.7-1.9.9-2.2.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.5c-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.2 1.3 1.1 2.3 1.4 2.6 1.6.3.1.5.1.6-.1l.7-.9c.2-.2.4-.2.6-.1l2 1c.3.1.4.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <nav aria-label="Направления">
+          <div class="footer__col-title">Направления</div>
+          <ul class="footer__list">
+            <li><a href="#directions">Сельскохозяйственное производство</a></li>
+            <li><a href="#products">Агротрейдинг</a></li>
+            <li><a href="#janadala">JANA DALA</a></li>
+            <li><a href="#alvan">Alvan Blanch</a></li>
+          </ul>
+        </nav>
+
+        <nav aria-label="Компания">
+          <div class="footer__col-title">Компания</div>
+          <ul class="footer__list">
+            <li><a href="about">О группе</a></li>
+            <li><a href="#products">Продукция</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contacts">
+          <div class="footer__col-title">Контакты</div>
+          <p>
+            <a href="tel:+77773106825">+7 777 310 68 25</a><br>
+            <a href="tel:+77773106823">+7 777 310 68 23</a>
+          </p>
+          <p itemprop="address">РК, г. Нур-Султан,<br>ул. Шарбаккол, VIP-городок «Караоткель», C-5</p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2026 FCC Pioneer. Все права защищены.</span>
+        <span>agropioneer.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/home.js"></script>
+</body>
+</html>

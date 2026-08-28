@@ -1,3 +1,7 @@
 _incoming/
 node_modules/
 .DS_Store
+img/
+_preview/
+package*.json
+_preview*.cjs
