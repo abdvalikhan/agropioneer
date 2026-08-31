@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SNS — инженерно-строительная компания</title>
+  <meta name="description" content="ТОО «Стройнефтесервис» (SNS) — инженерно-строительная компания Damu Group: проектирование, монтаж и пуско-наладка объектов нефтегазовой, химической и энергетической отраслей Казахстана.">
+  <meta name="theme-color" content="#0B1522">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="jana-dala.css">
+  <link rel="stylesheet" href="sns.css">
+</head>
+<body>
+
+  <!-- ============================ HERO + HEADER ============================ -->
+  <section class="hero">
+    <picture><source type="image/webp" srcset="public/images/sns-plant.webp"><img class="hero__img" src="public/images/sns-plant.jpg" alt="Промышленный объект нефтегазовой отрасли" width="1800" height="1100" loading="eager" fetchpriority="high"></picture>
+    <div class="hero__grad" aria-hidden="true"></div>
+
+    <header class="header">
+      <a class="logo" href="index.html" aria-label="Damu Group — на главную">
+        <svg class="logo__mark" width="26" height="22" viewBox="0 0 26 22" fill="none" aria-hidden="true"><path d="M2 20 L8 2 L13 12 L18 2 L24 20" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="logo__word">DAMU GROUP</span>
+      </a>
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link" href="index.html#directions">О группе</a>
+        <div class="nav__item">
+          <button class="nav__link" type="button" aria-haspopup="true" aria-expanded="false">Агробизнес
+            <svg class="chevron" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav__menu" role="menu">
+            <a role="menuitem" href="index.html#directions">Агротрейдинг</a>
+            <a role="menuitem" href="index.html#directions">Растениеводство</a>
+            <a role="menuitem" href="index.html#products">Продукция</a>
+          </div>
+        </div>
+        <a class="nav__link" href="jana-dala.html">Промышленное производство</a>
+        <a class="nav__link nav__link--active" href="sns.html" aria-current="page">Инженерно-строительная компания</a>
+        <a class="nav__link" href="index.html#partnerships">Партнёрства и проекты</a>
+        <a class="nav__link" href="#">Новости</a>
+        <a class="nav__link" href="#contacts">Контакты</a>
+      </nav>
+      <div class="header__right">
+        <div class="lang lang--row" data-lang-switch aria-label="Язык">
+          <a class="lang__opt is-active" data-lang="ru" href="#" aria-current="true">RU</a>
+          <span class="lang__sep" aria-hidden="true">/</span>
+          <a class="lang__opt" data-lang="kk" href="#">KZ</a>
+          <span class="lang__sep" aria-hidden="true">/</span>
+          <a class="lang__opt" data-lang="en" href="#">EN</a>
+          <span class="lang__sep" aria-hidden="true">/</span>
+          <a class="lang__opt" data-lang="zh" href="#">CN</a>
+        </div>
+        <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">SNS · ТОО «СТРОЙНЕФТЕСЕРВИС»</p>
+      <h1 class="hero__title">Инженерно-строительные<br>решения для промышленности</h1>
+      <p class="hero__slogan">Проектирование&nbsp;•&nbsp;Монтаж&nbsp;•&nbsp;Пуско-наладка&nbsp;•&nbsp;Сервис</p>
+      <div class="hero__buttons">
+        <a class="btn btn--accent" href="#contacts">Оставить заявку</a>
+        <a class="btn btn--ghost" href="https://sns-epc.kz" target="_blank" rel="noopener">sns-epc.kz</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Меню">
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true"><path d="M6 6l14 14M20 6L6 20" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <a href="index.html#directions">О группе</a>
+    <span>Агробизнес</span>
+    <div class="mobile-menu__sub">
+      <a href="index.html#directions">Агротрейдинг</a>
+      <a href="index.html#directions">Растениеводство</a>
+      <a href="index.html#products">Продукция</a>
+    </div>
+    <a href="jana-dala.html">Промышленное производство</a>
+    <a href="sns.html">Инженерно-строительная компания</a>
+    <a href="index.html#partnerships">Партнёрства и проекты</a>
+    <a href="#">Новости</a>
+    <a href="#contacts">Контакты</a>
+    <div class="mobile-menu__lang" data-lang-switch><a class="is-active" data-lang="ru" href="#">RU</a><a data-lang="kk" href="#">KZ</a><a data-lang="en" href="#">EN</a><a data-lang="zh" href="#">CN</a></div>
+  </div>
+
+  <main>
+    <!-- ============================ ABOUT ============================ -->
+    <section class="section section--white">
+      <div class="intro">
+        <div>
+          <p class="s-eyebrow">О компании</p>
+          <h2 class="intro__title">ТОО «Стройнефтесервис»</h2>
+          <p class="intro__text">Казахстанская инженерно-строительная компания, выполняющая проектирование, монтаж и пуско-наладку объектов в нефтегазовой, химической и энергетической отраслях.</p>
+          <div class="facts">
+            <div class="fact"><div class="fact__num">10+</div><div class="fact__label">лет в промышленном строительстве</div></div>
+            <div class="fact"><div class="fact__num">30+</div><div class="fact__label">инженерных специалистов</div></div>
+            <div class="fact"><div class="fact__num">20+</div><div class="fact__label">реализованных проектов по РК</div></div>
+          </div>
+        </div>
+        <div class="intro__media">
+          <picture><source type="image/webp" srcset="public/images/sns-installation.webp"><img src="public/images/sns-installation.jpg" alt="Монтажные работы SNS на промышленном объекте" width="1600" height="1000" loading="lazy"></picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ ADVANTAGES ============================ -->
+    <section class="section section--alt">
+      <p class="s-eyebrow">Наши преимущества</p>
+      <h2 class="s-h2" style="margin-top:12px">Почему выбирают SNS</h2>
+      <div class="caps">
+        <div class="cap">
+          <div class="cap__row">
+            <svg class="cap__icon" viewBox="0 0 36 36" fill="none" aria-hidden="true"><circle cx="13" cy="13" r="4.5" stroke="#1657C0" stroke-width="1.6"/><path d="M4 30c0-5 4-8 9-8s9 3 9 8" stroke="#1657C0" stroke-width="1.6" stroke-linecap="round"/><path d="M24 11.5a4.2 4.2 0 0 1 0 8M26 22c4 0 6.5 2.6 6.5 7" stroke="#1657C0" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <h3 class="cap__title">Квалифицированная команда</h3>
+          </div>
+          <p class="cap__text">Инженеры и монтажники с профильной подготовкой и опытом работы на промышленных объектах.</p>
+        </div>
+        <div class="cap">
+          <div class="cap__row">
+            <svg class="cap__icon" viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M18 12.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11Z" stroke="#1657C0" stroke-width="1.6"/><path d="M18 4v4M18 28v4M4 18h4M28 18h4M8 8l3 3M25 25l3 3M28 8l-3 3M11 25l-3 3" stroke="#1657C0" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <h3 class="cap__title">Современное оборудование</h3>
+          </div>
+          <p class="cap__text">Собственный парк техники и инструмента для монтажных, сварочных и пуско-наладочных работ.</p>
+        </div>
+        <div class="cap">
+          <div class="cap__row">
+            <svg class="cap__icon" viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M18 4l12 4v9c0 8-5.5 12.5-12 15-6.5-2.5-12-7-12-15V8l12-4Z" stroke="#1657C0" stroke-width="1.6" stroke-linejoin="round"/><path d="M13 17.5l3.5 3.5 6.5-7" stroke="#1657C0" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3 class="cap__title">Безопасность и ответственность</h3>
+          </div>
+          <p class="cap__text">Соблюдение стандартов промышленной безопасности и охраны труда на всех этапах работ.</p>
+        </div>
+        <div class="cap">
+          <div class="cap__row">
+            <svg class="cap__icon" viewBox="0 0 36 36" fill="none" aria-hidden="true"><path d="M18 4C12 4 8 8 8 14c0 7 10 18 10 18s10-11 10-18c0-6-4-10-10-10Z" stroke="#1657C0" stroke-width="1.6" stroke-linejoin="round"/><circle cx="18" cy="14" r="3.5" stroke="#1657C0" stroke-width="1.6"/></svg>
+            <h3 class="cap__title">Широкая география работ</h3>
+          </div>
+          <p class="cap__text">Реализуем проекты в разных регионах Казахстана — от Астаны и Павлодара до Шымкента.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ SERVICES ============================ -->
+    <section class="section section--white">
+      <p class="s-eyebrow">Наши услуги</p>
+      <h2 class="s-h2" style="margin-top:12px">Полный спектр работ</h2>
+      <div class="svc-grid">
+        <article class="svc">
+          <div class="svc__media"><img src="https://sns-epc.kz/img/service1.png" alt="Проектирование и инжиниринг" loading="lazy"></div>
+          <div class="svc__body">
+            <h3 class="svc__title">Проектирование и инжиниринг</h3>
+            <p class="svc__text">Разработка проектной и рабочей документации для промышленных объектов.</p>
+          </div>
+        </article>
+        <article class="svc">
+          <div class="svc__media"><img src="https://sns-epc.kz/img/service2.jpeg" alt="Монтаж и демонтаж оборудования" loading="lazy"></div>
+          <div class="svc__body">
+            <h3 class="svc__title">Монтаж и демонтаж оборудования</h3>
+            <p class="svc__text">Монтаж технологического оборудования, трубопроводов и металлоконструкций.</p>
+          </div>
+        </article>
+        <article class="svc">
+          <div class="svc__media"><img src="https://sns-epc.kz/img/service3.png" alt="Строительство и капитальный ремонт" loading="lazy"></div>
+          <div class="svc__body">
+            <h3 class="svc__title">Строительство и капремонт</h3>
+            <p class="svc__text">Строительно-монтажные работы и капитальный ремонт промышленных объектов.</p>
+          </div>
+        </article>
+        <article class="svc">
+          <div class="svc__media"><picture><source type="image/webp" srcset="public/images/sns-lab.webp"><img src="public/images/sns-lab.jpg" alt="Электротехническая и метрологическая лаборатория" loading="lazy"></picture></div>
+          <div class="svc__body">
+            <h3 class="svc__title">Электротехническая и метрологическая лаборатория</h3>
+            <p class="svc__text">Испытания, измерения и метрологическое обеспечение электрооборудования.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================ LABS + INDUSTRY PARTNERSHIP ============================ -->
+    <section class="section section--alt">
+      <div class="duo">
+        <div>
+          <p class="s-eyebrow">Лаборатории и сервисы</p>
+          <h2 class="s-h2" style="margin-top:12px">Специализированные<br>компетенции</h2>
+          <div class="labs__list">
+            <div class="labs__item">Электролаборатория и метрологическая лаборатория</div>
+            <div class="labs__item">Чистка, болтинг, экстракция, теплоизоляция</div>
+            <div class="labs__item">Антикоррозийная защита и пескоструйная обработка</div>
+            <div class="labs__item">Проектирование, супервайзинг, техническое обслуживание</div>
+          </div>
+        </div>
+        <div>
+          <p class="s-eyebrow">Партнёрство с отраслью</p>
+          <h2 class="s-h2" style="margin-top:12px">Работаем с ведущими<br>предприятиями страны</h2>
+          <p class="industry__text">Выполняем работы для крупных нефтеперерабатывающих и промышленных предприятий Казахстана.</p>
+          <div class="chips">
+            <span class="chip">ПНХЗ</span>
+            <span class="chip">АНПЗ</span>
+            <span class="chip">ПКОП</span>
+            <span class="chip">KUS</span>
+            <span class="chip">KPI</span>
+          </div>
+          <a class="projects-link" href="https://sns-epc.kz/projects.html" target="_blank" rel="noopener">Реализованные проекты на sns-epc.kz <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTACTS ============================ -->
+    <section class="section section--white" id="contacts">
+      <p class="s-eyebrow">Контакты SNS</p>
+      <h2 class="s-h2" style="margin-top:12px">Наши офисы</h2>
+      <div class="offices">
+        <div class="office">
+          <div class="office__city">Астана</div>
+          <div class="office__addr">Ул. Достык 16, БЦ Talan Towers, 25 этаж</div>
+        </div>
+        <div class="office">
+          <div class="office__city">Павлодар</div>
+          <div class="office__addr">Промышленная зона Северная, стр. 20/1</div>
+        </div>
+        <div class="office">
+          <div class="office__city">Шымкент</div>
+          <div class="office__addr">Енбекшинский район, 264 квартал, Здание 1</div>
+        </div>
+      </div>
+      <div class="contact-line">
+        <a href="tel:+77057814484">+7 (705) 781-44-84</a>
+        <a href="mailto:sns@sns-epc.kz">sns@sns-epc.kz</a>
+      </div>
+    </section>
+
+    <!-- ============================ CTA ============================ -->
+    <section class="cta">
+      <picture><source type="image/webp" srcset="public/images/sns-plant.webp"><img class="cta__img" src="public/images/sns-plant.jpg" alt="Промышленный объект" width="1800" height="600" loading="lazy"></picture>
+      <div class="cta__grad" aria-hidden="true"></div>
+      <div class="cta__content">
+        <h2 class="cta__title">Обсудим ваш проект</h2>
+        <p class="cta__text">Расскажите о задаче — предложим инженерное и строительное решение.</p>
+        <div class="cta__buttons">
+          <a class="btn btn--accent" href="#contacts">Оставить заявку</a>
+          <a class="btn btn--ghost" href="https://sns-epc.kz" target="_blank" rel="noopener">sns-epc.kz</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer" id="footer">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html">
+          <svg class="logo__mark" width="26" height="22" viewBox="0 0 26 22" fill="none" aria-hidden="true"><path d="M2 20 L8 2 L13 12 L18 2 L24 20" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="logo__word">DAMU GROUP</span>
+        </a>
+        <p class="footer__desc">Промышленно-аграрная группа компаний: агротрейдинг, сельхозпроизводство, промышленное производство и промышленный инжиниринг.</p>
+      </div>
+      <nav aria-label="Направления">
+        <p class="footer__col-title">Направления</p>
+        <ul class="footer__list">
+          <li><a href="index.html#products">Агротрейдинг</a></li>
+          <li><a href="index.html#products">Сельхозпроизводство</a></li>
+          <li><a href="jana-dala.html">Промышленное производство</a></li>
+          <li><a href="sns.html">Инженерно-строительная компания (SNS)</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="Компания">
+        <p class="footer__col-title">Компания</p>
+        <ul class="footer__list">
+          <li><a href="index.html#directions">О группе</a></li>
+          <li><a href="index.html#partnerships">Партнёрства и проекты</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer__col-title">SNS · Контакты</p>
+        <ul class="footer__list">
+          <li><span>Астана, ул. Достык 16,<br>БЦ Talan Towers, 25 этаж</span></li>
+          <li><a href="tel:+77057814484">+7 (705) 781-44-84</a></li>
+          <li><a href="mailto:sns@sns-epc.kz">sns@sns-epc.kz</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">© 2026 Damu Group. Все права защищены.</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

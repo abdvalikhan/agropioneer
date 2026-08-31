@@ -99,15 +99,15 @@ h1, h2, h3 { overflow-wrap: break-word; }
   position: absolute; top: 0; left: 0; right: 0; z-index: 3;
   height: 78px;
   display: flex; align-items: center;
-  padding: 0 var(--gutter); gap: 40px;
+  padding: 0 44px; gap: 26px;
 }
 .nav {
-  margin-left: 60px;
-  display: flex; align-items: center; gap: 34px;
+  margin-left: 16px;
+  display: flex; align-items: center; gap: 15px;
 }
 .nav__link {
-  display: inline-flex; align-items: center; gap: 7px;
-  font-size: 14px; font-weight: 500;
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13px; font-weight: 500;
   color: rgba(255,255,255,.9);
   transition: color .2s ease;
 }
@@ -135,7 +135,7 @@ h1, h2, h3 { overflow-wrap: break-word; }
 
 .header__right {
   margin-left: auto;
-  display: flex; align-items: center; gap: 28px;
+  display: flex; align-items: center; gap: 18px;
 }
 .search-btn { display: inline-flex; }
 .search-btn svg { display: block; }
@@ -251,6 +251,7 @@ h1, h2, h3 { overflow-wrap: break-word; }
 .card__media--agriculture { background-image: url("public/images/03_agriculture_seedlings.jpg"); background-image: image-set(url("public/images/03_agriculture_seedlings.webp") type("image/webp"), url("public/images/03_agriculture_seedlings.jpg") type("image/jpeg")); }
 .card__media--jana        { background-image: url("public/images/04_jana_dala_steel_frame.jpg"); background-image: image-set(url("public/images/04_jana_dala_steel_frame.webp") type("image/webp"), url("public/images/04_jana_dala_steel_frame.jpg") type("image/jpeg")); }
 .card__media--drying      { background-image: url("public/images/05_alvan_blanch_equipment.jpg"); background-image: image-set(url("public/images/05_alvan_blanch_equipment.webp") type("image/webp"), url("public/images/05_alvan_blanch_equipment.jpg") type("image/jpeg")); }
+.card__media--sns         { background-image: url("public/images/sns-plant.jpg"); }
 
 /* accent third card */
 .card--accent {
@@ -258,6 +259,60 @@ h1, h2, h3 { overflow-wrap: break-word; }
   box-shadow: var(--shadow-card);
 }
 .card--accent .card__media { height: 208px; }
+
+/* ==========================================================================
+   PARTNERSHIPS
+   ========================================================================== */
+.partners { padding: 88px 0 96px; background: #fff; }
+.partners__top {
+  display: grid; grid-template-columns: 5fr 1fr 6fr;
+  align-items: start;
+}
+.partners__eyebrow { color: var(--muted); }
+.partners__title {
+  margin-top: 18px;
+  font-size: 40px; font-weight: 600; line-height: 1.18; letter-spacing: -0.01em;
+  color: var(--ink); text-wrap: pretty;
+}
+.partners__intro {
+  grid-column: 3;
+  font-size: 15px; line-height: 1.7; color: var(--muted);
+}
+.partners__grid {
+  margin-top: 56px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px;
+}
+.partner { display: flex; flex-direction: column; }
+.partner__media {
+  height: 148px;
+  background-color: #e8e8e2;
+  background-size: cover; background-position: center;
+}
+.partner__media--caustic { background-image: url("public/images/caustic-soda-plant.jpg"); }
+.partner__media--alvan {
+  background-image: url("public/images/05_alvan_blanch_equipment.jpg");
+  background-image: image-set(url("public/images/05_alvan_blanch_equipment.webp") type("image/webp"), url("public/images/05_alvan_blanch_equipment.jpg") type("image/jpeg"));
+}
+.partner__media--baiterek { background-image: url("public/images/baiterek-partnership.jpg"); }
+.partner__body {
+  padding-top: 20px;
+  border-top: 1px solid #E6E8EA;
+}
+.partner__meta {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  min-height: 20px;
+}
+.partner__eyebrow { color: var(--muted); }
+.partner__logo { height: 20px; width: auto; object-fit: contain; }
+.partner__title {
+  margin-top: 14px;
+  font-size: 21px; font-weight: 600; line-height: 1.28; letter-spacing: -0.01em;
+  color: var(--ink);
+}
+.partner__text {
+  margin-top: 12px;
+  font-size: 14px; line-height: 1.6; color: #6B7780;
+}
 
 /* ==========================================================================
    JANA DALA BANNER
@@ -473,6 +528,10 @@ h1, h2, h3 { overflow-wrap: break-word; }
   .products__title { font-size: 30px; }
   .directions__top { grid-template-columns: 1fr; }
   .directions__intro { grid-column: 1; margin-top: 24px; }
+  .partners__top { grid-template-columns: 1fr; }
+  .partners__intro { grid-column: 1; margin-top: 24px; }
+  .partners__grid { grid-template-columns: 1fr; gap: 28px; }
+  .partners { padding: 64px 0; }
   .products__grid { grid-template-columns: 1fr; }
   .products__link { margin-top: 24px; padding-top: 0; }
   .jana { height: auto; padding: 48px 0; }
@@ -509,19 +568,15 @@ h1, h2, h3 { overflow-wrap: break-word; }
   * { transition-duration: .001ms !important; }
 }
 
-/* ---- Language dropdown ---- */
-.lang { position: relative; }
-.lang__btn { display: inline-flex; align-items: center; gap: 7px; font-size: 14px; font-weight: 500; color: rgba(255,255,255,.9); }
-.lang__btn:hover { color: #fff; }
-.lang__menu {
-  position: absolute; top: calc(100% + 10px); right: 0; min-width: 150px;
-  background: var(--deep); padding: 8px 0; z-index: 20;
-  opacity: 0; visibility: hidden; transform: translateY(-6px);
-  transition: opacity .2s ease, transform .2s ease, visibility .2s;
-  box-shadow: var(--shadow-card);
+/* ---- Language switcher (inline row RU / KZ / EN / CN) ---- */
+.lang--row { display: inline-flex; align-items: center; gap: 8px; }
+.lang__opt {
+  font-size: 12.5px; font-weight: 500; color: rgba(255,255,255,.55);
+  transition: color .2s ease;
 }
-.lang.is-open .lang__menu { opacity: 1; visibility: visible; transform: translateY(0); }
-.lang__menu a { display: block; padding: 10px 20px; font-size: 14px; color: #fff; }
-.lang__menu a:hover { background: rgba(255,255,255,.08); color: #fff; }
+.lang__opt:hover { color: #fff; }
+.lang__opt.is-active { color: #fff; font-weight: 600; }
+.lang__sep { font-size: 12.5px; color: rgba(255,255,255,.3); }
 .mobile-menu__lang { display: flex; flex-wrap: wrap; gap: 18px; padding-top: 8px; }
 .mobile-menu__lang a { font-size: 16px; color: rgba(255,255,255,.7); }
+.mobile-menu__lang a.is-active { color: #fff; font-weight: 600; }

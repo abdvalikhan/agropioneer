@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Damu Group — SNS (Инженерно-строительная компания). Page-specific styles.
+   Loads AFTER jana-dala.css and reuses its tokens, header, sections, footer.
+   ========================================================================== */
+
+/* Long company names (e.g. «Стройнефтесервис») must break on narrow screens */
+.hero__title, .intro__title, .s-h2 { overflow-wrap: break-word; }
+.intro > * { min-width: 0; }
+
+/* ---- Facts row (About) ---- */
+.facts {
+  margin-top: 30px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+}
+.fact { border-left: 2px solid var(--accent); padding-left: 16px; }
+.fact__num { font-size: 30px; font-weight: 700; line-height: 1; color: var(--ink); }
+.fact__label { margin-top: 8px; font-size: 13px; line-height: 1.5; color: var(--muted); }
+
+/* ---- Services (photo on top) ---- */
+.svc-grid { margin-top: 26px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.svc { background: #fff; border: 1px solid var(--line); display: flex; flex-direction: column; }
+.svc__media { height: 140px; background: #E8EAEC; overflow: hidden; }
+.svc__media img { width: 100%; height: 100%; object-fit: cover; }
+.svc__body { padding: 20px; display: flex; flex-direction: column; }
+.svc__title { font-size: 16px; font-weight: 600; line-height: 1.3; color: var(--ink); }
+.svc__text { margin-top: 10px; font-size: 13px; line-height: 1.6; color: var(--muted); }
+
+/* ---- Labs + Industry partnership (5fr / 7fr) ---- */
+.duo { display: grid; grid-template-columns: 5fr 7fr; gap: 56px; align-items: start; }
+.labs__list { margin-top: 22px; display: flex; flex-direction: column; gap: 16px; }
+.labs__item { position: relative; padding-left: 22px; font-size: 15px; line-height: 1.6; color: var(--body); }
+.labs__item::before {
+  content: ""; position: absolute; left: 0; top: 9px;
+  width: 8px; height: 8px; border-radius: 50%; background: var(--accent);
+}
+.industry__text { margin-top: 16px; font-size: 15px; line-height: 1.7; color: var(--muted); max-width: 460px; }
+.chips { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 12px; }
+.chip {
+  padding: 8px 16px; background: var(--accent-soft); color: var(--accent);
+  font-size: 13px; font-weight: 600; letter-spacing: 0.02em;
+}
+.projects-link {
+  margin-top: 26px; display: inline-flex; align-items: center; gap: 10px;
+  font-size: 15px; font-weight: 500; color: var(--accent);
+}
+.projects-link:hover { text-decoration: underline; color: var(--accent); }
+
+/* ---- Offices (Contacts) ---- */
+.offices { margin-top: 26px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.office { background: #fff; border: 1px solid var(--line); padding: 24px; }
+.office__city { font-size: 17px; font-weight: 600; color: var(--ink); }
+.office__addr { margin-top: 12px; font-size: 14px; line-height: 1.6; color: var(--muted); }
+.contact-line {
+  margin-top: 28px; display: flex; flex-wrap: wrap; gap: 12px 40px;
+  font-size: 15px;
+}
+.contact-line a { color: var(--accent); font-weight: 500; }
+.contact-line a:hover { color: var(--accent-dark); }
+
+/* ---- Responsive ---- */
+@media (max-width: 1200px) {
+  .svc-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 900px) {
+  .duo { grid-template-columns: 1fr; gap: 28px; }
+  .offices { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .facts, .svc-grid { grid-template-columns: 1fr; }
+}
