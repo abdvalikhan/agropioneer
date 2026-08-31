@@ -40,7 +40,9 @@
       </div>
 
       <a class="nav__link" href="jana-dala.html">Өнеркәсіптік өндіріс</a>
-      <a class="nav__link" href="#directions">Кептіру жабдығы</a>
+      <a class="nav__link" href="sns.html">Инженерлік-құрылыс компаниясы</a>
+      <a class="nav__link" href="#partnerships">Серіктестіктер мен жобалар</a>
+      <a class="nav__link" href="#">Жаңалықтар</a>
       <a class="nav__link" href="#footer">Байланыс</a>
     </nav>
 
@@ -51,16 +53,14 @@
           <path d="M11.8 11.8 L16 16" stroke="rgba(255,255,255,.9)" stroke-width="1.5" stroke-linecap="round"/>
         </svg>
       </button>
-      <div class="lang" data-lang-switch>
-        <button class="lang__btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Тіл"><span class="lang__cur">KZ</span>
-          <svg class="chevron" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="lang__menu" role="menu">
-          <a role="menuitem" data-lang="ru" href="#">Русский</a>
-          <a role="menuitem" data-lang="kk" href="#">Қазақша</a>
-          <a role="menuitem" data-lang="en" href="#">English</a>
-          <a role="menuitem" data-lang="zh" href="#">中文</a>
-        </div>
+      <div class="lang lang--row" data-lang-switch aria-label="Тіл">
+        <a class="lang__opt" data-lang="ru" href="#">RU</a>
+        <span class="lang__sep" aria-hidden="true">/</span>
+        <a class="lang__opt is-active" data-lang="kk" href="#" aria-current="true">KZ</a>
+        <span class="lang__sep" aria-hidden="true">/</span>
+        <a class="lang__opt" data-lang="en" href="#">EN</a>
+        <span class="lang__sep" aria-hidden="true">/</span>
+        <a class="lang__opt" data-lang="zh" href="#">CN</a>
       </div>
       <button class="burger" type="button" aria-label="Мәзірді ашу" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span><span></span>
@@ -81,9 +81,11 @@
       <a href="#products">Өнім</a>
     </div>
     <a href="jana-dala.html">Өнеркәсіптік өндіріс</a>
-    <a href="#directions">Кептіру жабдығы</a>
+    <a href="sns.html">Инженерлік-құрылыс компаниясы</a>
+    <a href="#partnerships">Серіктестіктер мен жобалар</a>
+    <a href="#">Жаңалықтар</a>
     <a href="#footer">Байланыс</a>
-    <div class="mobile-menu__lang" data-lang-switch><a data-lang="ru" href="#">RU</a><a data-lang="kk" href="#">KZ</a><a data-lang="en" href="#">EN</a><a data-lang="zh" href="#">CN</a></div>
+    <div class="mobile-menu__lang" data-lang-switch><a data-lang="ru" href="#">RU</a><a class="is-active" data-lang="kk" href="#">KZ</a><a data-lang="en" href="#">EN</a><a data-lang="zh" href="#">CN</a></div>
   </div>
 
   <section class="hero" id="top" aria-label="Damu Group">
@@ -123,46 +125,99 @@
 
         <div class="cards">
           <!-- 1 -->
-          <article class="card">
-            <div class="card__media card__media--agrotrading" role="img" aria-label="Астық тиеу: элеватор, автокөлік және порт терминалы"></div>
+          <a class="card" href="#products">
+            <div class="card__media card__media--agriculture" role="img" aria-label="Даладағы ауыл шаруашылығы дақылдарының көктері"></div>
+            <div class="card__body">
+              <p class="eyebrow card__eyebrow">KEN DALA</p>
+              <h3 class="card__title">Ауыл шаруашылығы өндірісі</h3>
+              <p class="card__text">Меншікті өндіріс: дәнді, майлы және бұршақ дақылдары.</p>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+
+          <!-- 2 -->
+          <a class="card" href="#products">
+            <div class="card__media card__media--agrotrading" role="img" aria-label="Күн батқанда бидай жинайтын комбайн"></div>
             <div class="card__body">
               <p class="eyebrow card__eyebrow">FCC PIONEER</p>
               <h3 class="card__title">Агротрейдинг</h3>
               <p class="card__text">Ауыл шаруашылығы өнімдерін жеткізу, сату және экспорттау.</p>
               <span class="card__arrow" aria-hidden="true">→</span>
             </div>
-          </article>
-
-          <!-- 2 -->
-          <article class="card">
-            <div class="card__media card__media--agriculture" role="img" aria-label="Күн батқанда бидай жинайтын комбайн"></div>
-            <div class="card__body">
-              <p class="eyebrow card__eyebrow">KEN DALA</p>
-              <h3 class="card__title">Өсімдік шаруашылығы</h3>
-              <p class="card__text">Меншікті өндіріс: дәнді, майлы және бұршақ дақылдары.</p>
-              <span class="card__arrow" aria-hidden="true">→</span>
-            </div>
-          </article>
+          </a>
 
           <!-- 3 — accent -->
-          <article class="card card--accent">
+          <a class="card card--accent" href="jana-dala.html">
             <div class="card__media card__media--jana" role="img" aria-label="Өнеркәсіптік ғимараттың металл қаңқасы"></div>
             <div class="card__body">
               <p class="eyebrow card__eyebrow">JANA DALA</p>
-              <h3 class="card__title">Металл конструкциялары</h3>
+              <h3 class="card__title">Өнеркәсіптік өндіріс</h3>
               <p class="card__text">ЛСТК, металл бұйымдары және кілтпен тапсырылатын жиынтық ғимараттар.</p>
               <span class="card__arrow" aria-hidden="true">→</span>
             </div>
-          </article>
+          </a>
 
           <!-- 4 -->
-          <article class="card">
-            <div class="card__media card__media--drying" role="img" aria-label="Астыққа арналған өнеркәсіптік кептіру жабдығы"></div>
+          <a class="card" href="sns.html">
+            <div class="card__media card__media--sns" role="img" aria-label="Мұнай-газ саласының өнеркәсіптік нысаны"></div>
             <div class="card__body">
-              <p class="eyebrow card__eyebrow">Жабдық</p>
-              <h3 class="card__title">Кептіру жабдығы</h3>
-              <p class="card__text">Астыққа арналған кептіру және өңдеу кешендері: жеткізу, монтаждау, сервис.</p>
+              <p class="eyebrow card__eyebrow">SNS</p>
+              <h3 class="card__title">Өнеркәсіптік инжиниринг</h3>
+              <p class="card__text">Мұнай-газ және энергетика саласы нысандарын жобалау, монтаждау және іске қосу-баптау.</p>
               <span class="card__arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PARTNERSHIPS ============================ -->
+    <section class="partners" id="partnerships">
+      <div class="container">
+        <div class="partners__top">
+          <div>
+            <p class="eyebrow partners__eyebrow">Стратегиялық жобалар</p>
+            <h2 class="partners__title">Серіктестіктер<br>мен жобалар</h2>
+          </div>
+          <p class="partners__intro">Топты индустриялық және институционалдық ойыншылармен серіктестік арқылы дамытамыз — химиялық өндірістен агротрейдингтегі ірі өңірлік бастамаларға дейін.</p>
+        </div>
+
+        <div class="partners__grid">
+          <!-- 1 -->
+          <article class="partner">
+            <div class="partner__media partner__media--caustic" role="img" aria-label="Каустикалық сода өндірісі"></div>
+            <div class="partner__body">
+              <div class="partner__meta">
+                <p class="eyebrow partner__eyebrow">Химия өнеркәсібі</p>
+              </div>
+              <h3 class="partner__title">Каустикалық соданы серіктестік негізде өндіру</h3>
+              <p class="partner__text">Өнеркәсіптік тұтынушылар үшін каустикалық соданы серіктестік негізде өндіруді дамытамыз.</p>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="partner">
+            <div class="partner__media partner__media--alvan" role="img" aria-label="Alvan Blanch кептіру және астық өңдеу жабдығы"></div>
+            <div class="partner__body">
+              <div class="partner__meta">
+                <p class="eyebrow partner__eyebrow">Дилерлік</p>
+                <img class="partner__logo" src="public/images/alvan-blanch.png" alt="Alvan Blanch" width="120" height="20" loading="lazy">
+              </div>
+              <h3 class="partner__title">Alvan Blanch</h3>
+              <p class="partner__text">Британдық Alvan Blanch өндірушісінің ресми дилері: кептіру және астық өңдеу жабдығын жеткізу, монтаждау және сервис.</p>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="partner">
+            <div class="partner__media partner__media--baiterek" role="img" aria-label="Өңірлік агротрейдердің бірлескен жобасы"></div>
+            <div class="partner__body">
+              <div class="partner__meta">
+                <p class="eyebrow partner__eyebrow">Бірлескен жоба</p>
+                <img class="partner__logo" src="public/images/baiterek.png" alt="Бәйтерек" width="120" height="20" loading="lazy">
+              </div>
+              <h3 class="partner__title">«Бәйтерек» холдингімен өңірлік трейдер</h3>
+              <p class="partner__text">«Бәйтерек» холдингімен бірлескен ірі өңірлік агротрейдер құру жобасы.</p>
             </div>
           </article>
         </div>
@@ -258,16 +313,16 @@
           <svg class="logo__mark" width="26" height="22" viewBox="0 0 26 22" fill="none" aria-hidden="true"><path d="M2 20 L8 2 L13 12 L18 2 L24 20" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="logo__word">DAMU GROUP</span>
         </div>
-        <p class="footer__desc">Өнеркәсіптік-аграрлық компаниялар тобы: агротрейдинг, өсімдік шаруашылығы, металл конструкциялары және кептіру жабдығы.</p>
+        <p class="footer__desc">Өнеркәсіптік-аграрлық компаниялар тобы: агротрейдинг, ауыл шаруашылығы өндірісі, өнеркәсіптік өндіріс және өнеркәсіптік инжиниринг.</p>
       </div>
 
       <nav aria-label="Бағыттар">
         <p class="footer__col-title">Бағыттар</p>
         <ul class="footer__list">
-          <li><a href="#directions">Агротрейдинг</a></li>
-          <li><a href="#directions">Ауыл шаруашылығы өндірісі</a></li>
+          <li><a href="#products">Агротрейдинг</a></li>
+          <li><a href="#products">Ауыл шаруашылығы өндірісі</a></li>
           <li><a href="jana-dala.html">Өнеркәсіптік өндіріс</a></li>
-          <li><a href="#directions">Кептіру жабдығы</a></li>
+          <li><a href="sns.html">Инженерлік-құрылыс компаниясы (SNS)</a></li>
         </ul>
       </nav>
 
@@ -275,8 +330,8 @@
         <p class="footer__col-title">Компания</p>
         <ul class="footer__list">
           <li><a href="#directions">Топ туралы</a></li>
+          <li><a href="#partnerships">Серіктестіктер мен жобалар</a></li>
           <li><a href="#">Жаңалықтар</a></li>
-          <li><a href="#">Мансап</a></li>
           <li><a href="#footer">Байланыс</a></li>
         </ul>
       </nav>

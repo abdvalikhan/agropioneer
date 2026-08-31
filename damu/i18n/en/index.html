@@ -40,7 +40,9 @@
       </div>
 
       <a class="nav__link" href="jana-dala.html">Industrial production</a>
-      <a class="nav__link" href="#directions">Drying equipment</a>
+      <a class="nav__link" href="sns.html">Engineering &amp; construction company</a>
+      <a class="nav__link" href="#partnerships">Partnerships &amp; projects</a>
+      <a class="nav__link" href="#">News</a>
       <a class="nav__link" href="#footer">Contacts</a>
     </nav>
 
@@ -51,16 +53,14 @@
           <path d="M11.8 11.8 L16 16" stroke="rgba(255,255,255,.9)" stroke-width="1.5" stroke-linecap="round"/>
         </svg>
       </button>
-      <div class="lang" data-lang-switch>
-        <button class="lang__btn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Language"><span class="lang__cur">EN</span>
-          <svg class="chevron" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </button>
-        <div class="lang__menu" role="menu">
-          <a role="menuitem" data-lang="ru" href="#">Русский</a>
-          <a role="menuitem" data-lang="kk" href="#">Қазақша</a>
-          <a role="menuitem" data-lang="en" href="#">English</a>
-          <a role="menuitem" data-lang="zh" href="#">中文</a>
-        </div>
+      <div class="lang lang--row" data-lang-switch aria-label="Language">
+        <a class="lang__opt" data-lang="ru" href="#">RU</a>
+        <span class="lang__sep" aria-hidden="true">/</span>
+        <a class="lang__opt" data-lang="kk" href="#">KZ</a>
+        <span class="lang__sep" aria-hidden="true">/</span>
+        <a class="lang__opt is-active" data-lang="en" href="#" aria-current="true">EN</a>
+        <span class="lang__sep" aria-hidden="true">/</span>
+        <a class="lang__opt" data-lang="zh" href="#">CN</a>
       </div>
       <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
         <span></span><span></span><span></span>
@@ -81,9 +81,11 @@
       <a href="#products">Products</a>
     </div>
     <a href="jana-dala.html">Industrial production</a>
-    <a href="#directions">Drying equipment</a>
+    <a href="sns.html">Engineering &amp; construction company</a>
+    <a href="#partnerships">Partnerships &amp; projects</a>
+    <a href="#">News</a>
     <a href="#footer">Contacts</a>
-    <div class="mobile-menu__lang" data-lang-switch><a data-lang="ru" href="#">RU</a><a data-lang="kk" href="#">KZ</a><a data-lang="en" href="#">EN</a><a data-lang="zh" href="#">CN</a></div>
+    <div class="mobile-menu__lang" data-lang-switch><a data-lang="ru" href="#">RU</a><a data-lang="kk" href="#">KZ</a><a class="is-active" data-lang="en" href="#">EN</a><a data-lang="zh" href="#">CN</a></div>
   </div>
 
   <section class="hero" id="top" aria-label="Damu Group">
@@ -123,46 +125,99 @@
 
         <div class="cards">
           <!-- 1 -->
-          <article class="card">
-            <div class="card__media card__media--agrotrading" role="img" aria-label="Grain loading: elevator, trucks and port terminal"></div>
+          <a class="card" href="#products">
+            <div class="card__media card__media--agriculture" role="img" aria-label="Sprouts of agricultural crops in a field"></div>
+            <div class="card__body">
+              <p class="eyebrow card__eyebrow">KEN DALA</p>
+              <h3 class="card__title">Agricultural production</h3>
+              <p class="card__text">Own production: cereals, oilseeds and legumes.</p>
+              <span class="card__arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+
+          <!-- 2 -->
+          <a class="card" href="#products">
+            <div class="card__media card__media--agrotrading" role="img" aria-label="A combine harvesting wheat at sunset"></div>
             <div class="card__body">
               <p class="eyebrow card__eyebrow">FCC PIONEER</p>
               <h3 class="card__title">Agri-trading</h3>
               <p class="card__text">Supply, trade and export of agricultural products.</p>
               <span class="card__arrow" aria-hidden="true">→</span>
             </div>
-          </article>
-
-          <!-- 2 -->
-          <article class="card">
-            <div class="card__media card__media--agriculture" role="img" aria-label="A combine harvesting wheat at sunset"></div>
-            <div class="card__body">
-              <p class="eyebrow card__eyebrow">KEN DALA</p>
-              <h3 class="card__title">Crop production</h3>
-              <p class="card__text">Own production: cereals, oilseeds and legumes.</p>
-              <span class="card__arrow" aria-hidden="true">→</span>
-            </div>
-          </article>
+          </a>
 
           <!-- 3 — accent -->
-          <article class="card card--accent">
+          <a class="card card--accent" href="jana-dala.html">
             <div class="card__media card__media--jana" role="img" aria-label="Steel frame of an industrial building"></div>
             <div class="card__body">
               <p class="eyebrow card__eyebrow">JANA DALA</p>
-              <h3 class="card__title">Steel structures</h3>
+              <h3 class="card__title">Industrial production</h3>
               <p class="card__text">LGSF, metal products and turnkey prefabricated buildings.</p>
               <span class="card__arrow" aria-hidden="true">→</span>
             </div>
-          </article>
+          </a>
 
           <!-- 4 -->
-          <article class="card">
-            <div class="card__media card__media--drying" role="img" aria-label="Industrial grain drying equipment"></div>
+          <a class="card" href="sns.html">
+            <div class="card__media card__media--sns" role="img" aria-label="Oil &amp; gas industry facility"></div>
             <div class="card__body">
-              <p class="eyebrow card__eyebrow">Equipment</p>
-              <h3 class="card__title">Drying equipment</h3>
-              <p class="card__text">Grain drying and processing complexes: supply, installation, service.</p>
+              <p class="eyebrow card__eyebrow">SNS</p>
+              <h3 class="card__title">Industrial engineering</h3>
+              <p class="card__text">Design, installation and commissioning of oil &amp; gas and power industry facilities.</p>
               <span class="card__arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PARTNERSHIPS ============================ -->
+    <section class="partners" id="partnerships">
+      <div class="container">
+        <div class="partners__top">
+          <div>
+            <p class="eyebrow partners__eyebrow">Strategic projects</p>
+            <h2 class="partners__title">Partnerships<br>&amp; projects</h2>
+          </div>
+          <p class="partners__intro">We grow the group through partnerships with industrial and institutional players — from chemical production to major regional agri-trading initiatives.</p>
+        </div>
+
+        <div class="partners__grid">
+          <!-- 1 -->
+          <article class="partner">
+            <div class="partner__media partner__media--caustic" role="img" aria-label="Caustic soda production"></div>
+            <div class="partner__body">
+              <div class="partner__meta">
+                <p class="eyebrow partner__eyebrow">Chemical industry</p>
+              </div>
+              <h3 class="partner__title">Partner production of caustic soda</h3>
+              <p class="partner__text">We are developing partner production of caustic soda for industrial consumers.</p>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="partner">
+            <div class="partner__media partner__media--alvan" role="img" aria-label="Alvan Blanch drying and grain-processing equipment"></div>
+            <div class="partner__body">
+              <div class="partner__meta">
+                <p class="eyebrow partner__eyebrow">Dealership</p>
+                <img class="partner__logo" src="public/images/alvan-blanch.png" alt="Alvan Blanch" width="120" height="20" loading="lazy">
+              </div>
+              <h3 class="partner__title">Alvan Blanch</h3>
+              <p class="partner__text">Official dealer of the British manufacturer Alvan Blanch: supply, installation and servicing of drying and grain-processing equipment.</p>
+            </div>
+          </article>
+
+          <!-- 3 -->
+          <article class="partner">
+            <div class="partner__media partner__media--baiterek" role="img" aria-label="Joint project of a regional agri-trader"></div>
+            <div class="partner__body">
+              <div class="partner__meta">
+                <p class="eyebrow partner__eyebrow">Joint project</p>
+                <img class="partner__logo" src="public/images/baiterek.png" alt="Baiterek" width="120" height="20" loading="lazy">
+              </div>
+              <h3 class="partner__title">Regional trader with Baiterek</h3>
+              <p class="partner__text">A joint project with the Baiterek holding to create a large regional agri-trader.</p>
             </div>
           </article>
         </div>
@@ -258,16 +313,16 @@
           <svg class="logo__mark" width="26" height="22" viewBox="0 0 26 22" fill="none" aria-hidden="true"><path d="M2 20 L8 2 L13 12 L18 2 L24 20" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <span class="logo__word">DAMU GROUP</span>
         </div>
-        <p class="footer__desc">An industrial and agricultural group of companies: agri-trading, crop production, steel structures and drying equipment.</p>
+        <p class="footer__desc">An industrial and agricultural group of companies: agri-trading, agricultural production, industrial manufacturing and industrial engineering.</p>
       </div>
 
       <nav aria-label="Divisions">
         <p class="footer__col-title">Divisions</p>
         <ul class="footer__list">
-          <li><a href="#directions">Agri-trading</a></li>
-          <li><a href="#directions">Agricultural production</a></li>
+          <li><a href="#products">Agri-trading</a></li>
+          <li><a href="#products">Agricultural production</a></li>
           <li><a href="jana-dala.html">Industrial production</a></li>
-          <li><a href="#directions">Drying equipment</a></li>
+          <li><a href="sns.html">Engineering &amp; construction company (SNS)</a></li>
         </ul>
       </nav>
 
@@ -275,8 +330,8 @@
         <p class="footer__col-title">Company</p>
         <ul class="footer__list">
           <li><a href="#directions">About the group</a></li>
+          <li><a href="#partnerships">Partnerships &amp; projects</a></li>
           <li><a href="#">News</a></li>
-          <li><a href="#">Careers</a></li>
           <li><a href="#footer">Contacts</a></li>
         </ul>
       </nav>
