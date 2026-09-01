@@ -251,7 +251,7 @@ h1, h2, h3 { overflow-wrap: break-word; }
 .card__media--agriculture { background-image: url("public/images/03_agriculture_seedlings.jpg"); background-image: image-set(url("public/images/03_agriculture_seedlings.webp") type("image/webp"), url("public/images/03_agriculture_seedlings.jpg") type("image/jpeg")); }
 .card__media--jana        { background-image: url("public/images/04_jana_dala_steel_frame.jpg"); background-image: image-set(url("public/images/04_jana_dala_steel_frame.webp") type("image/webp"), url("public/images/04_jana_dala_steel_frame.jpg") type("image/jpeg")); }
 .card__media--drying      { background-image: url("public/images/05_alvan_blanch_equipment.jpg"); background-image: image-set(url("public/images/05_alvan_blanch_equipment.webp") type("image/webp"), url("public/images/05_alvan_blanch_equipment.jpg") type("image/jpeg")); }
-.card__media--sns         { background-image: url("public/images/sns-plant.jpg"); }
+.card__media--sns         { background-image: url("public/images/sns-plant.jpg"); background-image: image-set(url("public/images/sns-plant.webp") type("image/webp"), url("public/images/sns-plant.jpg") type("image/jpeg")); }
 
 /* accent third card */
 .card--accent {
