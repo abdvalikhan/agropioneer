@@ -261,51 +261,62 @@ h1, h2, h3 { overflow-wrap: break-word; }
 .card--accent .card__media { height: 208px; }
 
 /* ==========================================================================
-   TRUST / MARQUEE
+   HERO TRUST MARQUEE  (overlaid inside hero, above the bottom transition)
    ========================================================================== */
-.trust {
-  padding: 56px 0 60px;
-  background: var(--paper-alt);
-  border-top: 1px solid #ECECE8;
-  border-bottom: 1px solid #ECECE8;
+.hero__trust {
+  position: absolute; left: 0; right: 0; bottom: 0; z-index: 2;
+  padding: 26px 0 20px;
 }
-.trust__label {
-  color: var(--muted);
-  text-align: center;
-  margin-bottom: 30px;
+/* Very light dark/blur veil only under the strip, for legibility over the photo */
+.hero__trust::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(180deg, rgba(8,16,22,0) 0%, rgba(8,16,22,.42) 60%, rgba(8,16,22,.5) 100%);
+  -webkit-backdrop-filter: blur(2px); backdrop-filter: blur(2px);
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 45%);
+          mask-image: linear-gradient(180deg, transparent, #000 45%);
+}
+.hero__trust-label {
+  color: rgba(255,255,255,.62);
+  margin-bottom: 14px;
 }
 .marquee {
   position: relative;
   overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
-          mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
 }
 .marquee__track {
   display: flex;
   width: max-content;
-  animation: marquee-scroll 42s linear infinite;
+  animation: marquee-scroll 48s linear infinite;
 }
 .marquee:hover .marquee__track { animation-play-state: paused; }
 .marquee__group { display: flex; align-items: center; }
 .marquee__item {
   flex: none;
-  padding: 0 40px;
-  font-size: 22px;
+  display: inline-flex; align-items: center;
+  padding: 0 34px;
+  font-size: 17px;
   font-weight: 700;
-  letter-spacing: 0.09em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   line-height: 1;
   white-space: nowrap;
-  color: #9AA4AD;
-  transition: color .25s ease;
+  color: rgba(255,255,255,.7);
+  transition: color .3s ease, opacity .3s ease;
 }
-.marquee__item:hover { color: var(--ink); }
+.marquee__item:hover { color: #fff; }
+/* Image logos drop in here: monochrome white by default, original colour on hover */
+.marquee__item .plogo {
+  height: 26px; width: auto; display: block;
+  filter: brightness(0) invert(1);
+  opacity: .78;
+  transition: filter .3s ease, opacity .3s ease;
+}
+.marquee__item:hover .plogo { filter: none; opacity: 1; }
 @keyframes marquee-scroll { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) {
-  .marquee { -webkit-mask-image: none; mask-image: none; }
-  .marquee__track { animation: none; width: auto; flex-wrap: wrap; justify-content: center; }
-  .marquee__group { flex-wrap: wrap; justify-content: center; }
-  .marquee__group[aria-hidden] { display: none; }
+  .marquee__track { animation: none; }
 }
 
 /* ==========================================================================
@@ -611,8 +622,10 @@ h1, h2, h3 { overflow-wrap: break-word; }
   .products { padding: 56px 0; }
   .footer { padding: 56px 0 40px; }
 
-  .trust { padding: 44px 0 46px; }
-  .marquee__item { font-size: 18px; padding: 0 24px; letter-spacing: 0.07em; }
+  .hero__trust { padding: 20px 0 14px; }
+  .hero__trust-label { margin-bottom: 10px; }
+  .marquee__item { font-size: 14px; padding: 0 20px; letter-spacing: 0.06em; }
+  .marquee__item .plogo { height: 20px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
