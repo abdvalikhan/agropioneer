@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="jana-dala.css?v=2">
-  <link rel="stylesheet" href="sns.css?v=2">
+  <link rel="stylesheet" href="jana-dala.css?v=3">
+  <link rel="stylesheet" href="sns.css?v=3">
 </head>
 <body>
 
@@ -42,6 +42,12 @@
         <a class="nav__link" href="index.html#partnerships">Партнёрства и проекты</a>        <a class="nav__link" href="#contacts">Контакты</a>
       </nav>
       <div class="header__right">
+      <div class="lang lang--row" data-lang-switch aria-label="Язык">
+        <a class="lang__opt is-active" data-lang="ru" href="#" aria-current="true">RU</a>
+        <span class="lang__sep" aria-hidden="true">/</span>
+        <a class="lang__opt" data-lang="en" href="#">EN</a>
+      </div>
+
       <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobile-menu">
           <span></span><span></span><span></span>
         </button>
@@ -73,6 +79,7 @@
     <a href="jana-dala.html">Промышленное производство</a>
     <a href="sns.html">Инженерно-строительная компания</a>
     <a href="index.html#partnerships">Партнёрства и проекты</a>    <a href="#contacts">Контакты</a>
+    <div class="mobile-menu__lang" data-lang-switch><a class="is-active" data-lang="ru" href="#">RU</a><a data-lang="en" href="#">EN</a></div>
   </div>
 
   <main>
@@ -273,6 +280,6 @@
     <div class="footer__bottom">© 2026 Damu Group. Все права защищены.</div>
   </footer>
 
-  <script src="script.js?v=2" defer></script>
+  <script src="script.js?v=3" defer></script>
 </body>
 </html>
