@@ -347,12 +347,12 @@ h1, h2, h3 { overflow-wrap: break-word; }
   background-color: #e8e8e2;
   background-size: cover; background-position: center;
 }
-.partner__media--caustic { background-image: url("public/images/caustic-soda-plant.jpg"); }
+.partner__media--caustic { background-image: url("public/images/caustic-soda-plant.jpg"); background-image: image-set(url("public/images/caustic-soda-plant.webp") type("image/webp"), url("public/images/caustic-soda-plant.jpg") type("image/jpeg")); }
 .partner__media--alvan {
   background-image: url("public/images/05_alvan_blanch_equipment.jpg");
   background-image: image-set(url("public/images/05_alvan_blanch_equipment.webp") type("image/webp"), url("public/images/05_alvan_blanch_equipment.jpg") type("image/jpeg"));
 }
-.partner__media--baiterek { background-image: url("public/images/baiterek-partnership.jpg"); }
+.partner__media--baiterek { background-image: url("public/images/baiterek-partnership.jpg"); background-image: image-set(url("public/images/baiterek-partnership.webp") type("image/webp"), url("public/images/baiterek-partnership.jpg") type("image/jpeg")); }
 .partner__body {
   padding-top: 20px;
   border-top: 1px solid #E6E8EA;
