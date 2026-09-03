@@ -615,7 +615,9 @@ h1, h2, h3 { overflow-wrap: break-word; }
   .hero__line { min-height: 72px; }
 
   .cards { grid-template-columns: 1fr; }
-  .crops { grid-template-columns: 1fr; }
+  .crops { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .crop__media { aspect-ratio: 1 / 1; }
+  .crop__caption { margin-top: 8px; font-size: 12px; }
   .footer__grid { grid-template-columns: 1fr; }
 
   .directions { padding: 56px 0; }
