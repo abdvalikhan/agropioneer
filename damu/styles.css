@@ -352,7 +352,7 @@ h1, h2, h3 { overflow-wrap: break-word; }
   background-image: url("public/images/05_alvan_blanch_equipment.jpg");
   background-image: image-set(url("public/images/05_alvan_blanch_equipment.webp") type("image/webp"), url("public/images/05_alvan_blanch_equipment.jpg") type("image/jpeg"));
 }
-.partner__media--baiterek { background-image: url("public/images/baiterek-partnership.jpg"); background-image: image-set(url("public/images/baiterek-partnership.webp") type("image/webp"), url("public/images/baiterek-partnership.jpg") type("image/jpeg")); }
+.partner__media--adal { background-image: url("public/images/adal-fund-partnership.jpg"); background-image: image-set(url("public/images/adal-fund-partnership.webp") type("image/webp"), url("public/images/adal-fund-partnership.jpg") type("image/jpeg")); }
 .partner__body {
   padding-top: 20px;
   border-top: 1px solid #E6E8EA;
